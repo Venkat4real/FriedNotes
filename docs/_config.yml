@@ -1,0 +1,12 @@
+# Site settings
+title: Fire Notes !
+description: Portfolio .
+baseurl: "/venkat4real.github.io/FriedNotes/" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+theme: minima # You can choose a different Jekyll theme here
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
