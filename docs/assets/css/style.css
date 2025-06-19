@@ -7,6 +7,9 @@ body {
 
 h1 {
     color: #0056b3;
+    border: 2px solid #007bff;
+    padding: 10px; 
+    display: inline-block;
 }
 
 p {
