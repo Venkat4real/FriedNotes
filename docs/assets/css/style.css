@@ -13,5 +13,9 @@ h1 {
 }
 
 p {
+    color: #0056b3;
+    border: 5px solid #007bff;
+    padding: 10px; 
+    display: inline-block;
     line-height: 1.6;
 }
