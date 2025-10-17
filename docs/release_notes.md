@@ -14,11 +14,14 @@ Daily Tasks
 * Sending the documentation for TL review and making any changes as suggested.
 * Sending the release notes for BA approval.
 
+Weekly and By-Weekly Tasks.
+*Check the pre-alerts: Tasks that are planned for deployment in the coming weeks, and start collecting information and testing.
+*checking and updating the assigned guides for any changes.
   
 * **Tools:** Git, VS Code, Swagger Editor, Postman
 
   The release notes I work on are:
-* Daily Release Notes for fast-track release.
+* Daily Release Notes for fast-track release(Bug fixes).
 * Biweekly Release Notes for planned software updates. (pre- Alerts)
 * Biweekly Release Notes for planned software updates. (Product Release Notes)
 * Guides for New products.
