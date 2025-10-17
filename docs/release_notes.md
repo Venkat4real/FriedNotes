@@ -2,18 +2,22 @@
 
 ---
 
-
-
----
-
 ## My Role & Tools Used
 As the technical writer, I was responsible for:
 
-* Interviewing QA, BA, and Developers.
-* Structuring the documentation using the Ooc 360.
+Daily Tasks
+* Checking the Jira for New tasks assigned.
+* Collect information about the software changes: Reading design documentation, interviewing QA, BA, and Developers.
+* Testing the new changes in the Working/Staging/Production site.
+* Attending daily standup meetings, Demo for new software implementation.
+* Structuring the documentation using the Doc 360.
+* Sending the documentation for TL review and making any changes as suggested.
+* Sending the release notes for BA approval.
+
+  
 * **Tools:** Git, VS Code, Swagger Editor, Postman
 
-* The release notes I work on are:
+  The release notes I work on are:
 * Daily Release Notes for fast-track release.
 * Biweekly Release Notes for planned software updates. (pre- Alerts)
 * Biweekly Release Notes for planned software updates. (Product Release Notes)
