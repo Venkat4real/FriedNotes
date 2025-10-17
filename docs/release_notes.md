@@ -2,24 +2,28 @@
 
 ---
 
-## Project Overview
-Daily Release Notes for fast-track release.
-Biweekly Release Notes for planned software updates. (pre- Alerts)
-Biweekly Release Notes for planned software updates. (Product Release Notes)
+
 
 ---
 
 ## My Role & Tools Used
-As the sole technical writer, I was responsible for:
+As the technical writer, I was responsible for:
 
 * Interviewing QA, BA, and Developers.
 * Structuring the documentation using the Ooc 360.
 * **Tools:** Git, VS Code, Swagger Editor, Postman
 
+* The release notes I work on are:
+* Daily Release Notes for fast-track release.
+* Biweekly Release Notes for planned software updates. (pre- Alerts)
+* Biweekly Release Notes for planned software updates. (Product Release Notes)
+* Guides for New products.
+* Internal Notes for API documentation.
+
 ---
 
-## The Result (Link to Sample)
-You can view the final published documentation here: [Insert Link Text Here](https://your-live-link.com)
+## Sample
+You can view the sample documentation here: [Insert Link Text Here](https://your-live-link.com)
 
 ---
 
