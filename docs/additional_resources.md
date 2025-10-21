@@ -1,6 +1,7 @@
 This page contains the list of the pages I referred to build and maintain this website. 
 * GitHub pages documentation
   > Click [here](https://docs.github.com/en/pages) to learn more.
+  >  **&#9432;** Click [here](https://docs.github.com/en/pages) to learn more.
 * Markdown documentation:
   >> Click [here]([url](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)) to learn more.
   >> Cheat sheet for Markdown.
