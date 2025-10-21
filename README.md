@@ -1,4 +1,6 @@
 # FriedNotes
+This is the main folder for the website.
+Please check the docs folder for the index file. 
 
 ## One Page for showing API intergration
   draw.io or the goodreads API
