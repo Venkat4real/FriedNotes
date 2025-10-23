@@ -9,4 +9,6 @@ This page contains the list of the pages I referred to build and maintain this w
 Some of the release notes I follow for inspiration. 
 * Gemini AI docs: click [here]([url](https://ai.google.dev/api)) , [Cook book]([url](https://github.com/google-gemini/cookbook?tab=readme-ov-file)) to learn more.
 
+Open Source projects to work for
+* https://developers.cloudflare.com/style-guide/contributions/
 
