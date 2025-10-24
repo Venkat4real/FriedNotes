@@ -1,7 +1,9 @@
 # Pincode details API
-Resource description: 
-This documentation details the PINCODE VALIDATION API for validating an Indian Pincode and retrieving the corresponding delivery post office details.
-The PINCODE VALIDATION API allows Users to check the validity of a given PINCODE. If the Pincode is valid, the API returns information about the associated delivery post office, including the Circle, Region, and Division. This API also supports searching by partial office names.
+Resource description:   
+
+
+This documentation details the PINCODE VALIDATION API for validating an Indian Pincode and retrieving the corresponding delivery post office details.  
+The PINCODE VALIDATION API allows Users to check the validity of a given PINCODE. If the Pincode is valid, the API returns information about the associated delivery post office,  including the Circle, Region, and Division. This API also supports searching by partial office names.
 
 Endpoints and methods:
 
