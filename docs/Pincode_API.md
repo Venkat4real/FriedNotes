@@ -22,24 +22,25 @@ The API accepts input in a JSON format.
 #### Request example for POST endpoint: 
 
 Example for pincode
-'
+```
 {
   "Input_Pincode": "532001"
 }
-'
+```
 
 Example for Place
-'
+```
 {
   "Input_Pincode": "srikak"
 }
-'
+```
 
 #### Response example and schema: 
 
 The API returns the result in JSON file, containing the validation status and, for successful, the post office details.
 
-Response parameters 
+#### Response parameters   
+
 | Key | Type | Description |
 | ----------- | ----------- | ----------- |
 | Validation Status | String | "Indicates successful validation. Value: ""Valid Pincode""." |
@@ -50,7 +51,7 @@ Response parameters
 | Delivery/Non-Delivery Office | String | "Specifies if the office delivers mail (""Delivery Office"") or not (""Non-Delivery Office"")." |
 
 #### Sample result 
-'
+```
 {
   "Validation Status": "Valid Pincode",
   "Circle": "Andhra Pradesh Circle",
@@ -59,19 +60,20 @@ Response parameters
   "Name of the office": "Srikakulam H.O",
   "Delivery/Non-Delivery Office": "Delivery Office"
 }
-'
+```
 
 #### Error Response 
 (Invalid Request/Input) An error response is returned when the input is invalid (e.g., an invalid Pincode format, non-existent Pincode, or an unprocessable search term).
 
-| KeyType | Description | Validation Status
-| String | Indicates an error | Value: "Invalid Input"
+| KeyType | Description | Validation Status |
+| ----------- | ----------- | ----------- |
+| String | Indicates an error | Value: "Invalid Input" |
 
 #### Sample error output 
-'
+```
 {
   "Validation Status": "Invalid Input"
 }
-'
+```
 
 
