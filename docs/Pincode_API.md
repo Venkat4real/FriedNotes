@@ -14,10 +14,9 @@ URL link: https://api.cept.gov.in/CommonFacilityMaster/api/values/Fetch_Facility
 
 The API accepts input in a JSON format.
 
-| Key	Type	| Description |  
-| ----------- | ----------- | ----------- |  
-| Input_Pincode	| -- String	-- | The Pincode |  
-| (e.g., "532001") or a partial office name (e.g., "srikak"). | 
+| Key	Type	| Description |  Input_Pincode |
+| ----------- | ----------- | ----------- | 
+| String	| The Pincode | (e.g., "532001") or a partial office name (e.g., "srikak") | 
 
 #### Request example for POST endpoint: 
 
