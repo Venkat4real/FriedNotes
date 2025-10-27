@@ -14,10 +14,10 @@ URL link: https://api.cept.gov.in/CommonFacilityMaster/api/values/Fetch_Facility
 
 The API accepts input in a JSON format.
 
-| Key	Type	| Description |
-| ----------- | ----------- | ----------- |
-| Input_Pincode	| -- String	-- | The Pincode |
-| (e.g., "532001") or a partial office name (e.g., "srikak").
+| Key	Type	| Description |  
+| ----------- | ----------- | ----------- |  
+| Input_Pincode	| -- String	-- | The Pincode |  
+| (e.g., "532001") or a partial office name (e.g., "srikak"). | 
 
 #### Request example for POST endpoint: 
 
@@ -44,11 +44,11 @@ The API returns the result in JSON file, containing the validation status and, f
 | Key | Type | Description |
 | ----------- | ----------- | ----------- |
 | Validation Status | String | "Indicates successful validation. Value: ""Valid Pincode""." |
-| Circle | String | The Postal Circle the office belongs to. |
-| Region | String | The Postal Region. |
-| Division | String | The Postal Division. |
-| Name of the office | String | The official name of the post office. |
-| Delivery/Non-Delivery Office | String | "Specifies if the office delivers mail (""Delivery Office"") or not (""Non-Delivery Office"")." |
+| Circle | String | The Postal Circle the office belongs to |
+| Region | String | The Postal Region |
+| Division | String | The Postal Division |
+| Name of the office | String | The official name of the post office |
+| Delivery/Non-Delivery Office | String | Specifies if the office delivers mail Delivery Office or not Non-Delivery Office |
 
 #### Sample result 
 ```
