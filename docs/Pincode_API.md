@@ -1,7 +1,6 @@
 # Pincode details API
 Resource description:   
 
-
 This documentation details the PINCODE VALIDATION API for validating an Indian Pincode and retrieving the corresponding delivery post office details.  
 The PINCODE VALIDATION API allows Users to check the validity of a given PINCODE. If the Pincode is valid, the API returns information about the associated delivery post office,  including the Circle, Region, and Division. This API also supports searching by partial office names.
 
@@ -62,7 +61,7 @@ The API returns the result in JSON file, containing the validation status and, f
 ```
 
 #### Error Response 
-(Invalid Request/Input) An error response is returned when the input is invalid (e.g., an invalid Pincode format, non-existent Pincode, or an unprocessable search term).
+ An error response is returned when the input is invalid (e.g., an invalid Pincode format, non-existent Pincode).
 
 | KeyType | Description | Validation Status |
 | ----------- | ----------- | ----------- |
