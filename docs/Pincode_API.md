@@ -6,7 +6,7 @@ The PINCODE VALIDATION API allows Users to check the validity of a given PINCODE
 
 ### Endpoints and methods:
 
-| POST: https://api.cept.gov.in/CommonFacilityMaster/api/values/Fetch_Facility |
+POST: https://api.cept.gov.in/CommonFacilityMaster/api/values/Fetch_Facility 
 
 #### Parameters for POST endpoint: 
 
