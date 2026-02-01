@@ -1,6 +1,6 @@
 # Site settings
-title: Fire Notes !
-description: Portfolio .
+title: Fried Notes !
+description: Portfolio 
 baseurl: "/venkat4real.github.io/FriedNotes/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
