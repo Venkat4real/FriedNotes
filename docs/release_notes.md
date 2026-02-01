@@ -2,8 +2,8 @@
 
 #### Module XY
 
-New filter is added to the product screen to filter the records by date. (Deployed date) Click here to read more.
+- New filter is added to the product screen to filter the records by date. *(Deployed date) **Click here to read more**.*
 
 ##### Module ZY
 
-Guide on New implementation is published. (Deployed date) Click here to read more.
+- Guide on New implementation is published. *(Deployed date) **Click here to read more**.*
