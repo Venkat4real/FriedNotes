@@ -1,3 +1,8 @@
+---
+layout: null
+---
+
+
 ## Release notes 1.1 (Jan 4 – 18)
 
 #### Module XY
