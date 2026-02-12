@@ -27,17 +27,17 @@ This product is designed for onbording the employee's. The Onboarding module hel
 
 Go to the _People dashboard_ screen and select _Onboarding Requests_ tab.
 
-Locate the Employee and click Start Onboarding.
+Locate the Employee and click _Start Onboarding_ button.
 
 <img width="469" height="370" alt="image" src="https://github.com/user-attachments/assets/dec3779f-c881-4d41-9105-a9e04d6cbf8e" />
 
 
-Select the Onboarding Template. The available templates are 
-*Engineering - India
-*Sales - Global
+From the dropdown, select the Onboarding Template. The available templates are 
+* Engineering - India
+* Sales - Global
 
 
-Selecitng anyone of the templates will automatically populate their task list.
+Selecitng anyone of the templates will automatically populate their task list the employees have to complete.
 
 ### Document Collection & Verification
 
