@@ -58,7 +58,7 @@ Select the hardware to be allocated (e.g., MacBook Pro M3, Monitor, Headset).
 
 Click Notify IT. This triggers a ticket in the IT department's queue with the employee's start date and shipping address.
 
-###Assigning Training Modules
+### Assigning Training Modules
 
 
 Scroll to the Compliance & Training section.
@@ -67,8 +67,9 @@ Assign the mandatory "Code of Conduct" and "Data Privacy" modules.
 
 > Note: These modules have a 7-day deadline from the date of joining. The system will send automated reminders on Day 3 and Day 5.
 
-Onboarding Status Workflow
-Frequently Asked Questions
+## Onboarding Status WorkflowFrequently Asked Questions
+
+
 Q: Can I change the start date after onboarding has started?
 
 A: Yes. Go to Profile > Job Details and edit the "Effective Date." TalentStream will automatically update the deadlines for all assigned tasks and notify the IT and Finance teams.
