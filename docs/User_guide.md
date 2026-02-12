@@ -16,14 +16,14 @@ This product is designed for onbording the employee's. The Onboarding module hel
 
 * You must have Admin or HR Manager permissions in TalentStream.
 
->Note: Contact the Support team (Suportteam@test.com) to activate this product for your account.
+> Note: Contact the Support team (Suportteam@test.com) to activate this product for your account.
 
->Internal Note: Steps to enable the product for the customer account.
+> Internal Note: Steps to enable the product for the customer account.
 
-###People Dashboard 
+### People Dashboard 
 
 
-###Initiate Onboarding
+### Initiate Onboarding
 
 
 Go to the People dashboard and select Onboarding Requests.
@@ -46,7 +46,7 @@ Status Tracking: Use the Document Tracker to see which items are "Pending" or "A
 
 <img width="476" height="362" alt="image" src="https://github.com/user-attachments/assets/fc4f5a9f-700a-48da-b078-119803dddf7b" />
 
-###Provisioning IT Assets
+### Provisioning IT Assets
 
 
 Click the Assets tab within the employee profile.
@@ -65,13 +65,17 @@ Scroll to the Compliance & Training section.
 
 Assign the mandatory "Code of Conduct" and "Data Privacy" modules.
 
->Note: These modules have a 7-day deadline from the date of joining. The system will send automated reminders on Day 3 and Day 5.
+> Note: These modules have a 7-day deadline from the date of joining. The system will send automated reminders on Day 3 and Day 5.
 
 Onboarding Status Workflow
 Frequently Asked Questions
-Q: Can I change the start date after onboarding has started? A: Yes. Go to Profile > Job Details and edit the "Effective Date." TalentStream will automatically update the deadlines for all assigned tasks and notify the IT and Finance teams.
+Q: Can I change the start date after onboarding has started?
 
-Q: What if the employee hasn't received their portal link? A: Check the Communication Log in their profile. You can click Resend Invite to trigger a new secure link to their personal email address.
+A: Yes. Go to Profile > Job Details and edit the "Effective Date." TalentStream will automatically update the deadlines for all assigned tasks and notify the IT and Finance teams.
+
+Q: What if the employee hasn't received their portal link?
+
+A: Check the Communication Log in their profile. You can click Resend Invite to trigger a new secure link to their personal email address.
 
 <img width="470" height="362" alt="image" src="https://github.com/user-attachments/assets/0f3095ae-ef05-433a-aeb2-b12dd5f46eb7" />
 
