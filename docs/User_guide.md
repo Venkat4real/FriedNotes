@@ -16,12 +16,16 @@ This product is designed for onbording the employee's. The Onboarding module hel
 
 * You must have Admin or HR Manager permissions in TalentStream.
 
-Note: Contact the Support team (Suportteam@test.com) to activate this product for your account.
+>Note: Contact the Support team (Suportteam@test.com) to activate this product for your account.
 
-Internal Note: Steps to enable the product for the customer account.
+>Internal Note: Steps to enable the product for the customer account.
 
-People Dashboard 
-Step 1: Initiate Onboarding
+###People Dashboard 
+
+
+###Initiate Onboarding
+
+
 Go to the People dashboard and select Onboarding Requests.
 
 Locate the employee and click Start Onboarding.
@@ -31,7 +35,9 @@ Locate the employee and click Start Onboarding.
 
 Select the Onboarding Template (e.g., Engineering - India or Sales - Global). This automatically populates their task list.
 
-Step 2: Document Collection & Verification
+### Document Collection & Verification
+
+
 The system will automatically email the employee a link to their New Hire Portal.
 
 Required Documents: You must verify the uploaded copies of their Govt ID (Aadhaar/PAN) and Bank Details for payroll.
@@ -40,7 +46,9 @@ Status Tracking: Use the Document Tracker to see which items are "Pending" or "A
 
 <img width="476" height="362" alt="image" src="https://github.com/user-attachments/assets/fc4f5a9f-700a-48da-b078-119803dddf7b" />
 
-Step 3: Provisioning IT Assets
+###Provisioning IT Assets
+
+
 Click the Assets tab within the employee profile.
 
 Select the hardware to be allocated (e.g., MacBook Pro M3, Monitor, Headset).
@@ -50,12 +58,14 @@ Select the hardware to be allocated (e.g., MacBook Pro M3, Monitor, Headset).
 
 Click Notify IT. This triggers a ticket in the IT department's queue with the employee's start date and shipping address.
 
-Step 4: Assigning Training Modules
+###Assigning Training Modules
+
+
 Scroll to the Compliance & Training section.
 
 Assign the mandatory "Code of Conduct" and "Data Privacy" modules.
 
-Note: These modules have a 7-day deadline from the date of joining. The system will send automated reminders on Day 3 and Day 5.
+>Note: These modules have a 7-day deadline from the date of joining. The system will send automated reminders on Day 3 and Day 5.
 
 Onboarding Status Workflow
 Frequently Asked Questions
