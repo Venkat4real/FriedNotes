@@ -1,0 +1,10 @@
+{
+  "name": "friednotes-docs",
+  "version": "1.0.0",
+  "scripts": {
+    "convert": "node convert.js"
+  },
+  "dependencies": {
+    "postman-to-openapi": "^1.7.3"
+  }
+}

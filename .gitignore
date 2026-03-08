@@ -1,0 +1,5 @@
+node_modules/
+package-lock.json
+clean_collection.json
+# openapi.yaml # Keep if you want it tracked
+# convert.js # Keep if you want it tracked
