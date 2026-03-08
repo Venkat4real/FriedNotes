@@ -4,7 +4,7 @@ const path = require('path');
 
 const inputPath = path.join(__dirname, 'collection.json');
 const tempPath = path.join(__dirname, 'clean_collection.json');
-const outputPath = path.join(__dirname, 'openapi.yaml');
+const outputPath = path.join(__dirname, 'docs', 'openapi.yaml');
 
 try {
   const collectionData = JSON.parse(fs.readFileSync(inputPath, 'utf8'));

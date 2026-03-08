@@ -27,7 +27,7 @@ To update or manage the API documentation, ensure the following are installed on
 The following files were added or modified:
 - `docs/api_reference.html`: The main API documentation page.
 - `docs/index.html`: Updated to include a link to the API reference.
-- `openapi.yaml`: The generated OpenAPI specification (auto-generated).
+- `docs/openapi.yaml`: The generated OpenAPI specification (auto-generated).
 - `convert.js`: A custom Node.js script that automates the conversion.
 - `package.json`: Contains project metadata and the update script.
 - `.gitignore`: Configured to ignore `node_modules` and temporary files.
@@ -63,7 +63,7 @@ This file uses the Redoc standalone bundle to render the documentation.
   </head>
   <body>
     <!-- Pointing to the generated OpenAPI YAML -->
-    <redoc spec-url="../openapi.yaml" scroll-y-offset="0"></redoc>
+    <redoc spec-url="openapi.yaml" scroll-y-offset="0"></redoc>
     
     <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"> </script>
   </body>
@@ -81,7 +81,7 @@ const path = require('path');
 
 const inputPath = path.join(__dirname, 'collection.json');
 const tempPath = path.join(__dirname, 'clean_collection.json');
-const outputPath = path.join(__dirname, 'openapi.yaml');
+const outputPath = path.join(__dirname, 'docs', 'openapi.yaml');
 
 try {
   const collectionData = JSON.parse(fs.readFileSync(inputPath, 'utf8'));
