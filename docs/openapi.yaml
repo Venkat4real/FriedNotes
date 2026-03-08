@@ -58,14 +58,24 @@ paths:
       tags:
         - Authentication
       summary: Register API Client
-      description: |-
+      description: >-
         ## Description
 
-        For reqesting a API token for Authentication
 
-        ## Response
+        For reqeusting a API token for Authentication
 
-        200 OK
+
+        ## Request Body Schema
+
+
+        |Field|Type|Description|
+
+
+        | Client Name | srting | **Required**. Full name of the person placing
+        the order. |  
+
+        | Email ID | integer | **Required.** The Email ID of the person placing
+        the order. |
       requestBody:
         content:
           application/json:
@@ -73,7 +83,7 @@ paths:
               type: object
               example:
                 clientName: Postman
-                clientEmail: valenti111n@example.com
+                clientEmail: val3nti111n@example.com
       parameters:
         - name: Content-Type
           in: header

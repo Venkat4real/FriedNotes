@@ -23,7 +23,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"clientName\": \"Postman\",\n  \"clientEmail\": \"valenti111n@example.com\"\n}",
+              "raw": "{\n  \"clientName\": \"Postman\",\n  \"clientEmail\": \"val3nti111n@example.com\"\n}",
               "options": {
                 "raw": {
                   "headerFamily": "json",
@@ -40,7 +40,7 @@
                 "api-clients"
               ]
             },
-            "description": "## Description\n\nFor reqesting a API token for Authentication\n\n## Response\n\n200 OK"
+            "description": "## Description\n\nFor reqeusting a API token for Authentication\n\n## Request Body Schema\n\n|Field|Type|Description|\n\n| Client Name | srting | **Required**. Full name of the person placing the order. |  \n| Email ID | integer | **Required.** The Email ID of the person placing the order. |"
           },
           "response": [
             {
@@ -2037,6 +2037,7 @@
       "script": {
         "type": "text/javascript",
         "packages": {},
+        "requests": {},
         "exec": [
           ""
         ]
@@ -2047,6 +2048,7 @@
       "script": {
         "type": "text/javascript",
         "packages": {},
+        "requests": {},
         "exec": [
           ""
         ]
@@ -2055,19 +2057,12 @@
   ],
   "variable": [
     {
-      "key": "baseURL",
-      "value": "",
-      "type": "any"
+      "key": "baseUrl",
+      "value": ""
     },
     {
       "key": "accesstocken",
-      "value": "",
-      "type": "any"
-    },
-    {
-      "key": "baseUrl",
-      "value": "{{baseURL}}",
-      "type": "any"
+      "value": ""
     }
   ]
 }
