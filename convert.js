@@ -12,7 +12,7 @@ try {
   
   fs.writeFileSync(tempPath, JSON.stringify(actualCollection, null, 2));
 
-  p2o(tempPath, outputPath, { defaultTag: 'General' })
+  p2o(tempPath, outputPath)
     .then(result => {
       console.log(`OpenAPI spec generated successfully at ${outputPath}`);
       fs.unlinkSync(tempPath); // Clean up

@@ -198,7 +198,7 @@ paths:
             application/json: {}
     post:
       tags:
-        - General
+        - default
       summary: When book is not in stock
       description: |-
         ## Description
@@ -272,7 +272,7 @@ paths:
             application/json: {}
     patch:
       tags:
-        - General
+        - default
       summary: Update an order
       description: >-
         ## Description
@@ -334,7 +334,7 @@ paths:
             application/json: {}
     delete:
       tags:
-        - General
+        - default
       summary: Delete an Order
       description: >-
         ## Description
@@ -390,7 +390,7 @@ paths:
   /status:
     get:
       tags:
-        - General
+        - default
       summary: API Status
       description: >-
         ## Description
