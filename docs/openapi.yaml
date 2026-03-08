@@ -62,20 +62,21 @@ paths:
         ## Description
 
 
-        For reqeusting a API token for Authentication
+        For requesting an API token for authentication.
 
 
         ## Request Body Schema
 
 
-        |Field|Type|Description|
+        | Field | Type | Description |
 
+        | :--- | :--- | :--- |
 
-        | Client Name | srting | **Required**. Full name of the person placing
-        the order. |  
+        | Client Name | string | **Required**. The name of the client
+        registering for access. |
 
-        | Email ID | integer | **Required.** The Email ID of the person placing
-        the order. |
+        | Email ID | string | **Required**. The email address associated with
+        the client. |
       requestBody:
         content:
           application/json:

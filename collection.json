@@ -40,7 +40,7 @@
                 "api-clients"
               ]
             },
-            "description": "## Description\n\nFor reqeusting a API token for Authentication\n\n## Request Body Schema\n\n|Field|Type|Description|\n\n| Client Name | srting | **Required**. Full name of the person placing the order. |  \n| Email ID | integer | **Required.** The Email ID of the person placing the order. |"
+            "description": "## Description\n\nFor requesting an API token for authentication.\n\n## Request Body Schema\n\n| Field | Type | Description |\n| :--- | :--- | :--- |\n| Client Name | string | **Required**. The name of the client registering for access. |\n| Email ID | string | **Required**. The email address associated with the client. |"
           },
           "response": [
             {
