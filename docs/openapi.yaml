@@ -1,60 +1,49 @@
 openapi: 3.0.0
 info:
   title: Books
-  description: >
+  description: >-
     # Books API Overview
 
 
     The **Books** API provides endpoints to manage and retrieve information
-    about books and related resources. This collection demonstrates typical
-    CRUD-style operations such as listing books, retrieving a single book by
-    identifier, and potentially creating, updating, or deleting book records
-    depending on the available requests.
-
-
-    Use this collection to:
-
-    - Explore how to fetch book data.
-
-    - Understand typical request and response shapes for a simple JSON-based
-    API.
-
-    - Experiment with query and path parameters for resource filtering.
+    about books and related resources.
 
 
     ## Authentication
 
 
-    If any authentication is configured for this collection or its requests, it
-    is set in the **Authorization** tab at the collection or request level and
-    inherited by individual requests as needed. If no auth is configured, the
-    API is assumed to be publicly accessible for demo purposes.
+    Patch Endpoint require Authentication. Refer the Endpoint to learn about
+    requesting API key.
 
 
-    ## Using this collection
+    ## End Points
 
 
-    1. Review the description on each request for details about its purpose,
-    parameters, and response codes.
+    GET
 
-    2. Use any saved examples to understand the typical response bodies.
 
-    3. Run requests directly or via the Collection Runner to test flows end to
-    end.
+    POST
+
+
+    PATCH
+
+
+    DEL
 
 
     Each request in this collection includes:
 
+
     - A short summary of what the endpoint does.
-
+        
     - HTTP method and path.
-
+        
     - Parameters (path/query) with types and examples where relevant.
-
+        
     - Required headers.
-
+        
     - Request body schema or examples (for methods that send a body).
-
+        
     - Key response codes and expected behavior.
   version: 1.0.0
 servers:

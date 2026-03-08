@@ -1,2189 +1,2063 @@
 {
-  "collection": {
-    "info": {
-      "_postman_id": "d5676a52-72b4-4283-8414-2adea75f87a0",
-      "name": "Books",
-      "description": "# Books API Overview\n\nThe **Books** API provides endpoints to manage and retrieve information about books and related resources. This collection demonstrates typical CRUD-style operations such as listing books, retrieving a single book by identifier, and potentially creating, updating, or deleting book records depending on the available requests.\n\nUse this collection to:\n- Explore how to fetch book data.\n- Understand typical request and response shapes for a simple JSON-based API.\n- Experiment with query and path parameters for resource filtering.\n\n## Authentication\n\nIf any authentication is configured for this collection or its requests, it is set in the **Authorization** tab at the collection or request level and inherited by individual requests as needed. If no auth is configured, the API is assumed to be publicly accessible for demo purposes.\n\n## Using this collection\n\n1. Review the description on each request for details about its purpose, parameters, and response codes.\n2. Use any saved examples to understand the typical response bodies.\n3. Run requests directly or via the Collection Runner to test flows end to end.\n\nEach request in this collection includes:\n- A short summary of what the endpoint does.\n- HTTP method and path.\n- Parameters (path/query) with types and examples where relevant.\n- Required headers.\n- Request body schema or examples (for methods that send a body).\n- Key response codes and expected behavior.\n",
-      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "createdAt": "2026-02-13T15:35:32.000Z",
-      "updatedAt": "2026-02-20T12:37:46.000Z",
-      "lastUpdatedBy": "49633623",
-      "uid": "49633623-d5676a52-72b4-4283-8414-2adea75f87a0"
+  "info": {
+    "_postman_id": "d5676a52-72b4-4283-8414-2adea75f87a0",
+    "name": "Books",
+    "description": "# Books API Overview\n\nThe **Books** API provides endpoints to manage and retrieve information about books and related resources.\n\n## Authentication\n\nPatch Endpoint require Authentication. Refer the Endpoint to learn about requesting API key.\n\n## End Points\n\nGET\n\nPOST\n\nPATCH\n\nDEL\n\nEach request in this collection includes:\n\n- A short summary of what the endpoint does.\n    \n- HTTP method and path.\n    \n- Parameters (path/query) with types and examples where relevant.\n    \n- Required headers.\n    \n- Request body schema or examples (for methods that send a body).\n    \n- Key response codes and expected behavior.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49633623",
+    "_collection_link": "https://go.postman.co/collection/49633623-d5676a52-72b4-4283-8414-2adea75f87a0?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "API Status",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/status",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "status"
+          ]
+        },
+        "description": "## Description\n\nRetrieves the current operational status of the Books API. Use this endpoint to verify server availability before performing CRUD operations."
+      },
+      "response": [
+        {
+          "name": "200 OK",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/status",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "status"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "Text",
+          "header": [
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Content-Length",
+              "value": "15"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Date",
+              "value": "Sun, 15 Feb 2026 14:06:58 GMT"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Amzn-Trace-Id",
+              "value": "Root=1-6991d302-408d4c2f55b43b8251bd9e97;Parent=4402d298e84e5d98;Sampled=0;Lineage=1:9ee0f5ed:0"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "x-amzn-RequestId",
+              "value": "f65c9a23-cc43-4676-ae33-ad16aeb24514"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "x-amz-apigw-id",
+              "value": "Y03oaHtZIAMEmXQ="
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Cache",
+              "value": "Miss from cloudfront"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Via",
+              "value": "1.1 bb005b280ad7a4bc1e334a088b6a2b0e.cloudfront.net (CloudFront)"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Amz-Cf-Pop",
+              "value": "BLR50-P4"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Amz-Cf-Id",
+              "value": "d4WwFrDu5Lpd2R7VXkpw_PhS6rftDvO8Ndk1gp_HaZ7j5Zf-xGjvFg=="
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"status\": \"OK\"\n}"
+        }
+      ]
     },
-    "item": [
-      {
-        "name": "API Status",
-        "event": [
-          {
-            "listen": "test",
-            "script": {
-              "id": "695fa492-ff22-4ab5-b66f-8d4ea6000b35",
-              "exec": [
-                ""
-              ],
-              "type": "text/javascript",
-              "packages": {},
-              "requests": {}
-            }
-          }
-        ],
-        "id": "61b85e66-e5a4-4322-a7cc-e5288c489411",
-        "protocolProfileBehavior": {
-          "disableBodyPruning": true
+    {
+      "name": "Get list of all books",
+      "request": {
+        "auth": {
+          "type": "noauth"
         },
-        "request": {
-          "method": "GET",
-          "header": [],
-          "url": {
-            "raw": "{{baseUrl}}/status",
-            "host": [
-              "{{baseUrl}}"
-            ],
-            "path": [
-              "status"
-            ]
-          },
-          "description": "## Description\n\nRetrieves the current operational status of the Books API. Use this endpoint to verify server availability before performing CRUD operations."
-        },
-        "response": [
-          {
-            "id": "9d584647-9d85-4fc3-a006-1f4a0f46e254",
-            "name": "200 OK",
-            "originalRequest": {
-              "method": "GET",
-              "header": [],
-              "url": {
-                "raw": "{{baseUrl}}/status",
-                "host": [
-                  "{{baseUrl}}"
-                ],
-                "path": [
-                  "status"
-                ]
-              }
-            },
-            "status": "OK",
-            "code": 200,
-            "_postman_previewlanguage": "Text",
-            "header": [
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Content-Length",
-                "value": "15"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Connection",
-                "value": "keep-alive"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Date",
-                "value": "Sun, 15 Feb 2026 14:06:58 GMT"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Amzn-Trace-Id",
-                "value": "Root=1-6991d302-408d4c2f55b43b8251bd9e97;Parent=4402d298e84e5d98;Sampled=0;Lineage=1:9ee0f5ed:0"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "x-amzn-RequestId",
-                "value": "f65c9a23-cc43-4676-ae33-ad16aeb24514"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Access-Control-Allow-Origin",
-                "value": "*"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Access-Control-Allow-Headers",
-                "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "x-amz-apigw-id",
-                "value": "Y03oaHtZIAMEmXQ="
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Access-Control-Allow-Methods",
-                "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Cache",
-                "value": "Miss from cloudfront"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Via",
-                "value": "1.1 bb005b280ad7a4bc1e334a088b6a2b0e.cloudfront.net (CloudFront)"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Amz-Cf-Pop",
-                "value": "BLR50-P4"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Amz-Cf-Id",
-                "value": "d4WwFrDu5Lpd2R7VXkpw_PhS6rftDvO8Ndk1gp_HaZ7j5Zf-xGjvFg=="
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              }
-            ],
-            "cookie": [],
-            "responseTime": null,
-            "body": "{\n    \"status\": \"OK\"\n}",
-            "createdAt": "2026-02-15T14:07:01.000Z",
-            "updatedAt": "2026-02-15T14:07:39.000Z",
-            "uid": "49633623-9d584647-9d85-4fc3-a006-1f4a0f46e254"
-          }
-        ],
-        "createdAt": "2026-02-13T15:36:00.000Z",
-        "updatedAt": "2026-02-15T15:26:15.000Z",
-        "uid": "49633623-61b85e66-e5a4-4322-a7cc-e5288c489411"
-      },
-      {
-        "name": "Get list of all books",
-        "id": "f936b8d1-39db-45fb-96a0-bf051f7e106d",
-        "protocolProfileBehavior": {
-          "disableBodyPruning": true
-        },
-        "request": {
-          "auth": {
-            "type": "noauth"
-          },
-          "method": "GET",
-          "header": [],
-          "url": {
-            "raw": "{{baseUrl}}/books",
-            "host": [
-              "{{baseUrl}}"
-            ],
-            "path": [
-              "books"
-            ],
-            "query": [
-              {
-                "key": "limit",
-                "value": "2",
-                "description": "Filters the results by limit. The maximum number of books to return in the response. Default is 10.",
-                "type": "text",
-                "disabled": true
-              },
-              {
-                "key": "type",
-                "value": "fiction",
-                "description": "Filters the results by genre. Supported values: fiction, non-fiction.",
-                "type": "text",
-                "disabled": true
-              }
-            ]
-          },
-          "description": "## Description\n\nReturns a list of all available books in the library catalog\n\n## Response attributes\n\n| Field | Type | Description |\n| --- | --- | --- |\n| `id` | integer | **Required.** Unique identifier for the book. |\n| `name` | string | **Required.** The full title of the book. |\n| `type` | string | **Required.** The genre/category (e.g., fiction, non-fiction). |\n| `available` | boolean | Indicates if the book is currently in stock. |"
-        },
-        "response": [
-          {
-            "id": "a9e27b9b-9627-4340-94a3-69af98cde859",
-            "name": "200 OK",
-            "originalRequest": {
-              "method": "GET",
-              "header": [],
-              "url": {
-                "raw": "{{baseUrl}}/books",
-                "host": [
-                  "{{baseUrl}}"
-                ],
-                "path": [
-                  "books"
-                ]
-              }
-            },
-            "status": "OK",
-            "code": 200,
-            "_postman_previewlanguage": "json",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "application/json",
-                "description": "",
-                "type": "text"
-              },
-              {
-                "key": "Content-Length",
-                "value": "417"
-              },
-              {
-                "key": "Connection",
-                "value": "keep-alive"
-              },
-              {
-                "key": "Date",
-                "value": "Sun, 15 Feb 2026 15:34:15 GMT"
-              },
-              {
-                "key": "X-Amzn-Trace-Id",
-                "value": "Root=1-6991e776-766cf5bb5dfdd949404217af;Parent=5748dbda32eda685;Sampled=0;Lineage=1:9ee0f5ed:0"
-              },
-              {
-                "key": "x-amzn-RequestId",
-                "value": "0ea40abf-7310-467d-acd4-ccfc695165b4"
-              },
-              {
-                "key": "Access-Control-Allow-Origin",
-                "value": "*"
-              },
-              {
-                "key": "Access-Control-Allow-Headers",
-                "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
-              },
-              {
-                "key": "x-amz-apigw-id",
-                "value": "Y1EapH1eoAMEXcA="
-              },
-              {
-                "key": "Access-Control-Allow-Methods",
-                "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
-              },
-              {
-                "key": "X-Cache",
-                "value": "Miss from cloudfront"
-              },
-              {
-                "key": "Via",
-                "value": "1.1 4f394bb2485ab8cd24ff0ea2fe25855e.cloudfront.net (CloudFront)"
-              },
-              {
-                "key": "X-Amz-Cf-Pop",
-                "value": "BLR50-P4"
-              },
-              {
-                "key": "X-Amz-Cf-Id",
-                "value": "IYPGyX78Ac6_6o0jGB9Z8zAyn6qY4odvtwr55Ds8M37ygXeZCfM34Q=="
-              }
-            ],
-            "cookie": [],
-            "responseTime": null,
-            "body": "[\n    {\n        \"id\": 1,\n        \"name\": \"The Russian\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 3,\n        \"name\": \"The Vanishing Half\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 4,\n        \"name\": \"The Midnight Library\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Viscount Who Loved Me\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Just as I Am\",\n        \"type\": \"non-fiction\",\n        \"available\": false\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Untamed\",\n        \"type\": \"non-fiction\",\n        \"available\": true\n    }\n]",
-            "createdAt": "2026-02-15T15:34:17.000Z",
-            "updatedAt": "2026-02-18T04:41:00.000Z",
-            "uid": "49633623-a9e27b9b-9627-4340-94a3-69af98cde859"
-          }
-        ],
-        "createdAt": "2026-02-14T02:54:00.000Z",
-        "updatedAt": "2026-02-18T04:42:06.000Z",
-        "uid": "49633623-f936b8d1-39db-45fb-96a0-bf051f7e106d"
-      },
-      {
-        "name": "Get details of single book",
-        "id": "506349e7-13b3-4a30-adf4-cba026378e3e",
-        "protocolProfileBehavior": {
-          "disableBodyPruning": true
-        },
-        "request": {
-          "auth": {
-            "type": "noauth"
-          },
-          "method": "GET",
-          "header": [],
-          "url": {
-            "raw": "{{baseUrl}}/books/:bookId",
-            "host": [
-              "{{baseUrl}}"
-            ],
-            "path": [
-              "books",
-              ":bookId"
-            ],
-            "variable": [
-              {
-                "key": "bookId",
-                "value": "2",
-                "description": "The unique identifier for the book. Example: 2"
-              }
-            ]
-          },
-          "description": "## Description\n\nReturns detailed information for a specific book using its unique ID. This includes the title, author, genre, and current stock availability."
-        },
-        "response": [
-          {
-            "id": "deb4ea17-79ba-42d3-b7c8-b1385d9ee233",
-            "name": "200 OK",
-            "originalRequest": {
-              "method": "GET",
-              "header": [],
-              "url": {
-                "raw": "{{baseUrl}}/books/:bookId",
-                "host": [
-                  "{{baseUrl}}"
-                ],
-                "path": [
-                  "books",
-                  ":bookId"
-                ],
-                "variable": [
-                  {
-                    "key": "bookId",
-                    "value": "2",
-                    "description": "The unique identifier for the book. Example: 2"
-                  }
-                ]
-              }
-            },
-            "status": "OK",
-            "code": 200,
-            "_postman_previewlanguage": "Text",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              },
-              {
-                "key": "Content-Length",
-                "value": "284"
-              },
-              {
-                "key": "Connection",
-                "value": "keep-alive"
-              },
-              {
-                "key": "Date",
-                "value": "Sun, 15 Feb 2026 15:14:27 GMT"
-              },
-              {
-                "key": "X-Amzn-Trace-Id",
-                "value": "Root=1-6991e2d3-395c0fe80cc26296408f8737;Parent=5453a481f1ecc0db;Sampled=0;Lineage=1:9ee0f5ed:0"
-              },
-              {
-                "key": "x-amzn-RequestId",
-                "value": "ba3022db-863b-45b4-b6b2-4b2214e2debc"
-              },
-              {
-                "key": "Access-Control-Allow-Origin",
-                "value": "*"
-              },
-              {
-                "key": "Access-Control-Allow-Headers",
-                "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
-              },
-              {
-                "key": "x-amz-apigw-id",
-                "value": "Y1BhLGqfIAMEgVg="
-              },
-              {
-                "key": "Access-Control-Allow-Methods",
-                "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
-              },
-              {
-                "key": "X-Cache",
-                "value": "Miss from cloudfront"
-              },
-              {
-                "key": "Via",
-                "value": "1.1 83467edef0f4c4a316c7c4b13c65c970.cloudfront.net (CloudFront)"
-              },
-              {
-                "key": "X-Amz-Cf-Pop",
-                "value": "BLR50-P4"
-              },
-              {
-                "key": "X-Amz-Cf-Id",
-                "value": "Vtp92FpOzH3aSEKOGa5UYpZPtTbYte-BURNG7YkfZ6sgQMQPMoo-Gg=="
-              }
-            ],
-            "cookie": [],
-            "responseTime": null,
-            "body": "{\n    \"id\": 2,\n    \"entityType\": \"BOOK\",\n    \"available\": false,\n    \"timestamp\": 1752239490804,\n    \"created\": \"2025-07-11T13:11:30.804Z\",\n    \"GSI1SK\": \"BOOK#2\",\n    \"name\": \"Just as I Am\",\n    \"current-stock\": 0,\n    \"GSI1PK\": \"TYPE#non-fiction\",\n    \"price\": 20.33,\n    \"PK\": \"BOOK#2\",\n    \"author\": \"Cicely Tyson\",\n    \"type\": \"non-fiction\",\n    \"SK\": \"METADATA\"\n}",
-            "createdAt": "2026-02-15T15:14:57.000Z",
-            "updatedAt": "2026-02-15T15:44:50.000Z",
-            "uid": "49633623-deb4ea17-79ba-42d3-b7c8-b1385d9ee233"
-          }
-        ],
-        "createdAt": "2026-02-14T04:16:49.000Z",
-        "updatedAt": "2026-02-15T15:44:21.000Z",
-        "uid": "49633623-506349e7-13b3-4a30-adf4-cba026378e3e"
-      },
-      {
-        "name": "Get all orders",
-        "id": "17c7b767-9bda-4abe-b8b8-a9cb0c888f60",
-        "protocolProfileBehavior": {
-          "disableBodyPruning": true
-        },
-        "request": {
-          "auth": {
-            "type": "bearer",
-            "bearer": [
-              {
-                "key": "token",
-                "value": "{{accesstocken}}",
-                "type": "string"
-              }
-            ]
-          },
-          "method": "GET",
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/books",
+          "host": [
+            "{{baseUrl}}"
           ],
-          "body": {
-            "mode": "raw",
-            "raw": "{}",
-            "options": {
-              "raw": {
-                "headerFamily": "json",
-                "language": "json"
-              }
-            }
-          },
-          "url": {
-            "raw": "{{baseUrl}}/orders",
-            "host": [
-              "{{baseUrl}}"
-            ],
-            "path": [
-              "orders"
-            ],
-            "query": [
-              {
-                "key": "type",
-                "value": "fiction",
-                "description": "list the fictional books ",
-                "disabled": true
-              }
-            ]
-          },
-          "description": "## Description\n\nThis Endpoint is for viewing all the orders made in the library. This end point requires authorization.\n\n## Example\n\n## Responce\n\n200 OK - Request is understood successfully and results are sent\n\n## Parameters\n\n## Authentication\n\nThis end ponit requires an authentication to submit or view a order."
-        },
-        "response": [
-          {
-            "id": "c585b340-5614-465a-830e-207f39cf6723",
-            "name": "Get all orders",
-            "originalRequest": {
-              "method": "GET",
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "description": "Added as a part of security scheme: bearer",
-                  "key": "Authorization",
-                  "value": "Bearer <token>"
-                }
-              ],
-              "body": {
-                "mode": "raw",
-                "raw": "{}",
-                "options": {
-                  "raw": {
-                    "headerFamily": "json",
-                    "language": "json"
-                  }
-                }
-              },
-              "url": {
-                "raw": "{{baseUrl}}/orders?type=fiction",
-                "host": [
-                  "{{baseUrl}}"
-                ],
-                "path": [
-                  "orders"
-                ],
-                "query": [
-                  {
-                    "description": "list the fictional books ",
-                    "key": "type",
-                    "value": "fiction"
-                  }
-                ]
-              }
-            },
-            "status": "OK",
-            "code": 200,
-            "_postman_previewlanguage": "Text",
-            "header": [
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Content-Length",
-                "value": "738"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Connection",
-                "value": "keep-alive"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Date",
-                "value": "Sat, 14 Feb 2026 07:20:23 GMT"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Amzn-Trace-Id",
-                "value": "Root=1-699023b2-189bc19c6369038860c7debd;Parent=48a5ff609c77b122;Sampled=0;Lineage=1:9ee0f5ed:0"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "x-amzn-RequestId",
-                "value": "73052792-e3ea-4a05-9516-92f44a30aeec"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Access-Control-Allow-Origin",
-                "value": "*"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Access-Control-Allow-Headers",
-                "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "x-amz-apigw-id",
-                "value": "YwpIyEr2IAMEkLQ="
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Access-Control-Allow-Methods",
-                "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Cache",
-                "value": "Miss from cloudfront"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Via",
-                "value": "1.1 4f394bb2485ab8cd24ff0ea2fe25855e.cloudfront.net (CloudFront)"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Amz-Cf-Pop",
-                "value": "BLR50-P4"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Amz-Cf-Id",
-                "value": "lSwtdQaXQgO5Dz6zDtdLKhN2bCp17PVzSzAX02WJl4B-Sx0ZewCR8Q=="
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              }
-            ],
-            "cookie": [],
-            "responseTime": null,
-            "body": "[\n    {\n        \"id\": \"I-Zf_dbNPLj5RfFW9BDk9\",\n        \"bookId\": 1,\n        \"customerName\": \"John\",\n        \"quantity\": 1,\n        \"timestamp\": 1771051678919\n    },\n    {\n        \"id\": \"VFv0lQKxLOWtutdXPcRRj\",\n        \"bookId\": 1,\n        \"customerName\": \"Nicolas Daniel\",\n        \"quantity\": 1,\n        \"timestamp\": 1771052999455\n    },\n    {\n        \"id\": \"_xKIoQbD4hM4yaebjgJ2o\",\n        \"bookId\": 1,\n        \"customerName\": \"John\",\n        \"quantity\": 1,\n        \"timestamp\": 1771051739026\n    },\n    {\n        \"id\": \"foNVb6UZTCBxrUzdMtR7l\",\n        \"bookId\": 1,\n        \"customerName\": \"John\",\n        \"quantity\": 1,\n        \"timestamp\": 1771051485234\n    },\n    {\n        \"id\": \"gPxDtQ3P0nCjGZ35WgkVY\",\n        \"bookId\": 1,\n        \"customerName\": \"Ted Gibson\",\n        \"quantity\": 1,\n        \"timestamp\": 1771053022090\n    },\n    {\n        \"id\": \"yZ_J9XrJazq2eVGMonT4T\",\n        \"bookId\": 1,\n        \"customerName\": \"John\",\n        \"quantity\": 1,\n        \"timestamp\": 1771051368913\n    },\n    {\n        \"id\": \"zMW8CQlvd-wO6Giye-eEG\",\n        \"bookId\": 1,\n        \"customerName\": \"John\",\n        \"quantity\": 1,\n        \"timestamp\": 1771053546210\n    }\n]",
-            "createdAt": "2026-02-14T07:21:58.000Z",
-            "updatedAt": "2026-02-15T15:17:03.000Z",
-            "uid": "49633623-c585b340-5614-465a-830e-207f39cf6723"
-          }
-        ],
-        "createdAt": "2026-02-14T07:18:45.000Z",
-        "updatedAt": "2026-02-20T12:38:00.000Z",
-        "uid": "49633623-17c7b767-9bda-4abe-b8b8-a9cb0c888f60"
-      },
-      {
-        "name": "order a book",
-        "id": "e3052a70-afba-4ee9-b897-ab684ba91ce2",
-        "protocolProfileBehavior": {
-          "disableBodyPruning": true
-        },
-        "request": {
-          "auth": {
-            "type": "bearer",
-            "bearer": [
-              {
-                "key": "token",
-                "value": "{{accesstocken}}",
-                "type": "string"
-              }
-            ]
-          },
-          "method": "POST",
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
+          "path": [
+            "books"
           ],
-          "body": {
-            "mode": "raw",
-            "raw": "{\n  \"bookId\": 1,\n  \"customerName\": \"{{$randomFullName}}\"\n}",
-            "options": {
-              "raw": {
-                "headerFamily": "json",
-                "language": "json"
-              }
-            }
-          },
-          "url": {
-            "raw": "{{baseUrl}}/orders?type=fiction",
-            "host": [
-              "{{baseUrl}}"
-            ],
-            "path": [
-              "orders"
-            ],
-            "query": [
-              {
-                "description": "list the fictional books ",
-                "key": "type",
-                "value": "fiction"
-              }
-            ]
-          },
-          "description": "## Description\n\nThis Endpoint is for placing order for a book. This end point requires authorization.\n\n## Example\n\n```\n{\n  \"bookId\": 1,\n  \"customerName\": \"John\"\n}\n\n ```\n\n## Parameters\n\n## Authentication\n\nThis end ponit requires an authentication to submit or view a order."
-        },
-        "response": [
-          {
-            "id": "181a5d19-4830-4218-9447-175fb0f01c13",
-            "name": "When book is not in stock",
-            "originalRequest": {
-              "method": "POST",
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "description": "Added as a part of security scheme: bearer",
-                  "key": "Authorization",
-                  "value": "Bearer <token>"
-                }
-              ],
-              "body": {
-                "mode": "raw",
-                "raw": "{\n  \"bookId\": 1,\n  \"customerName\": \"{{$randomFullName}}\"\n}",
-                "options": {
-                  "raw": {
-                    "headerFamily": "json",
-                    "language": "json"
-                  }
-                }
-              },
-              "url": {
-                "raw": "{{baseUrl}}/orders?type=fiction",
-                "host": [
-                  "{{baseUrl}}"
-                ],
-                "path": [
-                  "orders"
-                ],
-                "query": [
-                  {
-                    "description": "list the fictional books ",
-                    "key": "type",
-                    "value": "fiction"
-                  }
-                ]
-              }
-            },
-            "status": "Not Found",
-            "code": 404,
-            "_postman_previewlanguage": "Text",
-            "header": [
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Content-Length",
-                "value": "55"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Connection",
-                "value": "keep-alive"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Date",
-                "value": "Sat, 14 Feb 2026 06:46:40 GMT"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Amzn-Trace-Id",
-                "value": "Root=1-69901a50-25d8868a622670820a628f0f;Parent=646ea0004ab3f3c3;Sampled=0;Lineage=1:9ee0f5ed:0"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "x-amzn-RequestId",
-                "value": "99fae9e7-7a4d-46d2-ad1e-1543571b9492"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Access-Control-Allow-Origin",
-                "value": "*"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Access-Control-Allow-Headers",
-                "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "x-amz-apigw-id",
-                "value": "YwkMoFVOoAMEBOQ="
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Access-Control-Allow-Methods",
-                "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Cache",
-                "value": "Error from cloudfront"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Via",
-                "value": "1.1 7f91d3358cb8b5b50ea653cbde2d162c.cloudfront.net (CloudFront)"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Amz-Cf-Pop",
-                "value": "BLR50-P4"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Amz-Cf-Id",
-                "value": "SaoYk3bugscOJGH4hU6l1Al6KWrOb5xvyLIq0NjWpz8hWndfL9oKlg=="
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              }
-            ],
-            "cookie": [],
-            "responseTime": null,
-            "body": "{\n    \"error\": \"This book is not in stock. Try again later.\"\n}",
-            "createdAt": "2026-02-14T06:46:43.000Z",
-            "updatedAt": "2026-02-15T15:16:13.000Z",
-            "uid": "49633623-181a5d19-4830-4218-9447-175fb0f01c13"
-          },
-          {
-            "id": "ad034866-929f-4fef-a6f9-8df83d210f54",
-            "name": "Successfully ordered a book",
-            "originalRequest": {
-              "method": "POST",
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "description": "Added as a part of security scheme: bearer",
-                  "key": "Authorization",
-                  "value": "Bearer <token>"
-                }
-              ],
-              "body": {
-                "mode": "raw",
-                "raw": "{\n  \"bookId\": 1,\n  \"customerName\": \"{{$randomFullName}}\"\n}",
-                "options": {
-                  "raw": {
-                    "headerFamily": "json",
-                    "language": "json"
-                  }
-                }
-              },
-              "url": {
-                "raw": "{{baseUrl}}/orders?type=fiction",
-                "host": [
-                  "{{baseUrl}}"
-                ],
-                "path": [
-                  "orders"
-                ],
-                "query": [
-                  {
-                    "description": "list the fictional books ",
-                    "key": "type",
-                    "value": "fiction"
-                  }
-                ]
-              }
-            },
-            "status": "Created",
-            "code": 201,
-            "_postman_previewlanguage": "Text",
-            "header": [
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Content-Length",
-                "value": "50"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Connection",
-                "value": "keep-alive"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Date",
-                "value": "Sat, 14 Feb 2026 06:47:58 GMT"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Amzn-Trace-Id",
-                "value": "Root=1-69901a9e-6cf10ca77f99d52d2346ada6;Parent=11b0811325e11f7c;Sampled=0;Lineage=1:9ee0f5ed:0"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "x-amzn-RequestId",
-                "value": "a236b7c7-f272-4a7f-8fc5-7b9b58f9bf76"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Access-Control-Allow-Origin",
-                "value": "*"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Access-Control-Allow-Headers",
-                "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "x-amz-apigw-id",
-                "value": "YwkY4Fh7IAMEbuw="
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Access-Control-Allow-Methods",
-                "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Cache",
-                "value": "Miss from cloudfront"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Via",
-                "value": "1.1 7f91d3358cb8b5b50ea653cbde2d162c.cloudfront.net (CloudFront)"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Amz-Cf-Pop",
-                "value": "BLR50-P4"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Amz-Cf-Id",
-                "value": "f-_RO4VhQPGoJhnLiGofK_kQNpGNc69zAAk64lKad8UDK6XCmj5cMg=="
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              }
-            ],
-            "cookie": [],
-            "responseTime": null,
-            "body": "{\n    \"created\": true,\n    \"orderId\": \"I-Zf_dbNPLj5RfFW9BDk9\"\n}",
-            "createdAt": "2026-02-14T06:48:02.000Z",
-            "updatedAt": "2026-02-15T15:16:30.000Z",
-            "uid": "49633623-ad034866-929f-4fef-a6f9-8df83d210f54"
-          }
-        ],
-        "createdAt": "2026-02-14T04:38:41.000Z",
-        "updatedAt": "2026-02-20T12:37:03.000Z",
-        "uid": "49633623-e3052a70-afba-4ee9-b897-ab684ba91ce2"
-      },
-      {
-        "name": "Get details of a single book",
-        "id": "f15a9e92-1587-4246-b088-74e917517ab8",
-        "protocolProfileBehavior": {
-          "disableBodyPruning": true
-        },
-        "request": {
-          "auth": {
-            "type": "bearer",
-            "bearer": [
-              {
-                "key": "token",
-                "value": "{{accesstocken}}",
-                "type": "string"
-              }
-            ]
-          },
-          "method": "GET",
-          "header": [
+          "query": [
             {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
-          ],
-          "body": {
-            "mode": "raw",
-            "raw": "{}",
-            "options": {
-              "raw": {
-                "headerFamily": "json",
-                "language": "json"
-              }
-            }
-          },
-          "url": {
-            "raw": "{{baseUrl}}/orders/:orderId?type=fiction",
-            "host": [
-              "{{baseUrl}}"
-            ],
-            "path": [
-              "orders",
-              ":orderId"
-            ],
-            "query": [
-              {
-                "description": "list the fictional books ",
-                "key": "type",
-                "value": "fiction"
-              }
-            ],
-            "variable": [
-              {
-                "key": "orderId",
-                "value": "I-Zf_dbNPLj5RfFW9BDk9"
-              }
-            ]
-          },
-          "description": "## Description\n\nThis Endpoint is for viewing all the orders made in the library. This end point requires authorization.\n\n## Example\n\n## Responce\n\n200 OK - Request is understood successfully and results are sent\n\n## Path Variables\n\n## Authentication\n\nThis end ponit requires an authentication to submit or view a order."
-        },
-        "response": [
-          {
-            "id": "0cb0a7de-535b-4d2e-a7ca-f53a85f46bd8",
-            "name": "Get details of a single book",
-            "originalRequest": {
-              "method": "GET",
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "description": "Added as a part of security scheme: bearer",
-                  "key": "Authorization",
-                  "value": "Bearer <token>"
-                }
-              ],
-              "body": {
-                "mode": "raw",
-                "raw": "{}",
-                "options": {
-                  "raw": {
-                    "headerFamily": "json",
-                    "language": "json"
-                  }
-                }
-              },
-              "url": {
-                "raw": "{{baseUrl}}/orders/:orderId?type=fiction",
-                "host": [
-                  "{{baseUrl}}"
-                ],
-                "path": [
-                  "orders",
-                  ":orderId"
-                ],
-                "query": [
-                  {
-                    "description": "list the fictional books ",
-                    "key": "type",
-                    "value": "fiction"
-                  }
-                ],
-                "variable": [
-                  {
-                    "key": "orderId",
-                    "value": "I-Zf_dbNPLj5RfFW9BDk9"
-                  }
-                ]
-              }
+              "key": "limit",
+              "value": "2",
+              "description": "Filters the results by limit. The maximum number of books to return in the response. Default is 10.",
+              "type": "text",
+              "disabled": true
             },
-            "status": "OK",
-            "code": 200,
-            "_postman_previewlanguage": "Text",
-            "header": [
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Content-Length",
-                "value": "102"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Connection",
-                "value": "keep-alive"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Date",
-                "value": "Sat, 14 Feb 2026 07:26:42 GMT"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Amzn-Trace-Id",
-                "value": "Root=1-699023b2-189bc19c6369038860c7debd;Parent=48a5ff609c77b122;Sampled=0;Lineage=1:9ee0f5ed:0"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "x-amzn-RequestId",
-                "value": "7637e660-0c52-4e9c-b844-513813f82027"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Access-Control-Allow-Origin",
-                "value": "*"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Access-Control-Allow-Headers",
-                "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "x-amz-apigw-id",
-                "value": "YwqD_GN9IAMEUlQ="
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Access-Control-Allow-Methods",
-                "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Cache",
-                "value": "Miss from cloudfront"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Via",
-                "value": "1.1 9a5f7993ae8aa6b11950605aada73158.cloudfront.net (CloudFront)"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Amz-Cf-Pop",
-                "value": "BLR50-P4"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Amz-Cf-Id",
-                "value": "rt8rWgZebgFSNpN6F8amzjVfuBDN4S0D4WbCmw0I12oKnsntpDzuEg=="
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              }
-            ],
-            "cookie": [],
-            "responseTime": null,
-            "body": "{\n    \"id\": \"I-Zf_dbNPLj5RfFW9BDk9\",\n    \"bookId\": 1,\n    \"customerName\": \"John\",\n    \"quantity\": 1,\n    \"timestamp\": 1771051678919\n}",
-            "createdAt": "2026-02-14T07:27:01.000Z",
-            "updatedAt": "2026-02-15T15:17:17.000Z",
-            "uid": "49633623-0cb0a7de-535b-4d2e-a7ca-f53a85f46bd8"
-          }
-        ],
-        "createdAt": "2026-02-14T07:25:34.000Z",
-        "updatedAt": "2026-02-15T14:59:26.000Z",
-        "uid": "49633623-f15a9e92-1587-4246-b088-74e917517ab8"
-      },
-      {
-        "name": "When book is not in stock",
-        "id": "b914914e-e5ed-4863-8ec5-27f6f72cd302",
-        "protocolProfileBehavior": {
-          "disableBodyPruning": true
-        },
-        "request": {
-          "auth": {
-            "type": "bearer",
-            "bearer": [
-              {
-                "key": "token",
-                "value": "{{accesstocken}}",
-                "type": "string"
-              }
-            ]
-          },
-          "method": "POST",
-          "header": [],
-          "body": {
-            "mode": "raw",
-            "raw": "{\r\n  \"bookId\": 2,\r\n  \"customerName\": \"John\"\r\n}",
-            "options": {
-              "raw": {
-                "language": "json"
-              }
-            }
-          },
-          "url": {
-            "raw": "{{baseURL}}/orders",
-            "host": [
-              "{{baseURL}}"
-            ],
-            "path": [
-              "orders"
-            ],
-            "query": [
-              {
-                "description": "list the fictional books ",
-                "key": "type",
-                "value": "fiction",
-                "disabled": true
-              }
-            ]
-          },
-          "description": "## Description\n\nExample for when the book is not in stock"
-        },
-        "response": [
-          {
-            "id": "b2bdebd6-fca3-4d31-8cc0-b520b0405b11",
-            "name": "404 Not Found",
-            "originalRequest": {
-              "method": "POST",
-              "header": [],
-              "body": {
-                "mode": "raw",
-                "raw": "{\r\n  \"bookId\": 2,\r\n  \"customerName\": \"John\"\r\n}",
-                "options": {
-                  "raw": {
-                    "language": "json"
-                  }
-                }
-              },
-              "url": {
-                "raw": "{{baseURL}}/orders",
-                "host": [
-                  "{{baseURL}}"
-                ],
-                "path": [
-                  "orders"
-                ],
-                "query": [
-                  {
-                    "description": "list the fictional books ",
-                    "key": "type",
-                    "value": "fiction",
-                    "disabled": true
-                  }
-                ]
-              }
-            },
-            "status": "Not Found",
-            "code": 404,
-            "_postman_previewlanguage": "Text",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              },
-              {
-                "key": "Content-Length",
-                "value": "55"
-              },
-              {
-                "key": "Connection",
-                "value": "keep-alive"
-              },
-              {
-                "key": "Date",
-                "value": "Sun, 15 Feb 2026 15:17:36 GMT"
-              },
-              {
-                "key": "X-Amzn-Trace-Id",
-                "value": "Root=1-6991e390-58b4b8604ea11a93530ac0c3;Parent=78c3c217f77c1e91;Sampled=0;Lineage=1:9ee0f5ed:0"
-              },
-              {
-                "key": "x-amzn-RequestId",
-                "value": "ec0612cc-12e1-4aec-8aa6-7a1cb2b76588"
-              },
-              {
-                "key": "Access-Control-Allow-Origin",
-                "value": "*"
-              },
-              {
-                "key": "Access-Control-Allow-Headers",
-                "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
-              },
-              {
-                "key": "x-amz-apigw-id",
-                "value": "Y1B-sF1CoAMEvjw="
-              },
-              {
-                "key": "Access-Control-Allow-Methods",
-                "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
-              },
-              {
-                "key": "X-Cache",
-                "value": "Error from cloudfront"
-              },
-              {
-                "key": "Via",
-                "value": "1.1 a1b65f70ffc6e3717e17091dd53c6dda.cloudfront.net (CloudFront)"
-              },
-              {
-                "key": "X-Amz-Cf-Pop",
-                "value": "BLR50-P4"
-              },
-              {
-                "key": "X-Amz-Cf-Id",
-                "value": "dukgZHLoez6uHPs3dCklL8KgY_jb8zOZu6z2Bn0PH_H_gO9SlgHPXA=="
-              }
-            ],
-            "cookie": [],
-            "responseTime": null,
-            "body": "{\n    \"error\": \"This book is not in stock. Try again later.\"\n}",
-            "createdAt": "2026-02-15T15:18:51.000Z",
-            "updatedAt": "2026-02-15T15:19:01.000Z",
-            "uid": "49633623-b2bdebd6-fca3-4d31-8cc0-b520b0405b11"
-          }
-        ],
-        "createdAt": "2026-02-14T06:51:59.000Z",
-        "updatedAt": "2026-02-15T15:18:51.000Z",
-        "uid": "49633623-b914914e-e5ed-4863-8ec5-27f6f72cd302"
-      },
-      {
-        "name": "Update an order",
-        "id": "b8a1b1a9-e3a0-440d-8150-915bc510b3c1",
-        "protocolProfileBehavior": {
-          "disableBodyPruning": true
-        },
-        "request": {
-          "auth": {
-            "type": "bearer",
-            "bearer": [
-              {
-                "key": "token",
-                "value": "{{accesstocken}}",
-                "type": "string"
-              }
-            ]
-          },
-          "method": "PATCH",
-          "header": [
             {
-              "key": "Content-Type",
-              "value": "application/json"
+              "key": "type",
+              "value": "fiction",
+              "description": "Filters the results by genre. Supported values: fiction, non-fiction.",
+              "type": "text",
+              "disabled": true
             }
-          ],
-          "body": {
-            "mode": "raw",
-            "raw": "{\n  \"customerName\": \"John Charles\"\n}",
-            "options": {
-              "raw": {
-                "headerFamily": "json",
-                "language": "json"
-              }
-            }
-          },
-          "url": {
-            "raw": "{{baseUrl}}/orders/:orderId?type=fiction",
-            "host": [
-              "{{baseUrl}}"
-            ],
-            "path": [
-              "orders",
-              ":orderId"
-            ],
-            "query": [
-              {
-                "description": "list the fictional books ",
-                "key": "type",
-                "value": "fiction"
-              }
-            ],
-            "variable": [
-              {
-                "key": "orderId",
-                "value": "I-Zf_dbNPLj5RfFW9BDk9"
-              }
-            ]
-          },
-          "description": "## Description\n\nThis Endpoint is for updating the order. Need a body with the ID of the book to update. Needs the name that needs to be updated.\n\nAfter updating check the order again with 'Get details of single book' end point\n\n## Example\n\n## Responce\n\n200 OK - Request is understood successfully and results are sent\n\n202 No Content\n\n1 - the order will be updated with new name iven in the body\n\n## Path Variables\n\n## Authentication\n\nThis end ponit requires an authentication to submit or view a order."
-        },
-        "response": [
-          {
-            "id": "eaf283d3-e41d-4990-9277-692624424968",
-            "name": "Get details of a single book",
-            "originalRequest": {
-              "method": "PATCH",
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "description": "Added as a part of security scheme: bearer",
-                  "key": "Authorization",
-                  "value": "Bearer <token>"
-                }
-              ],
-              "body": {
-                "mode": "raw",
-                "raw": "{\n  \"customerName\": \"John Charles\"\n}",
-                "options": {
-                  "raw": {
-                    "headerFamily": "json",
-                    "language": "json"
-                  }
-                }
-              },
-              "url": {
-                "raw": "{{baseUrl}}/orders/:orderId?type=fiction",
-                "host": [
-                  "{{baseUrl}}"
-                ],
-                "path": [
-                  "orders",
-                  ":orderId"
-                ],
-                "query": [
-                  {
-                    "description": "list the fictional books ",
-                    "key": "type",
-                    "value": "fiction"
-                  }
-                ],
-                "variable": [
-                  {
-                    "key": "orderId",
-                    "value": "I-Zf_dbNPLj5RfFW9BDk9"
-                  }
-                ]
-              }
-            },
-            "status": "OK",
-            "code": 200,
-            "_postman_previewlanguage": "Text",
-            "header": [
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Content-Length",
-                "value": "102"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Connection",
-                "value": "keep-alive"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Date",
-                "value": "Sat, 14 Feb 2026 07:26:42 GMT"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Amzn-Trace-Id",
-                "value": "Root=1-699023b2-189bc19c6369038860c7debd;Parent=48a5ff609c77b122;Sampled=0;Lineage=1:9ee0f5ed:0"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "x-amzn-RequestId",
-                "value": "7637e660-0c52-4e9c-b844-513813f82027"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Access-Control-Allow-Origin",
-                "value": "*"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Access-Control-Allow-Headers",
-                "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "x-amz-apigw-id",
-                "value": "YwqD_GN9IAMEUlQ="
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Access-Control-Allow-Methods",
-                "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Cache",
-                "value": "Miss from cloudfront"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Via",
-                "value": "1.1 9a5f7993ae8aa6b11950605aada73158.cloudfront.net (CloudFront)"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Amz-Cf-Pop",
-                "value": "BLR50-P4"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Amz-Cf-Id",
-                "value": "rt8rWgZebgFSNpN6F8amzjVfuBDN4S0D4WbCmw0I12oKnsntpDzuEg=="
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              }
-            ],
-            "cookie": [],
-            "responseTime": null,
-            "body": "{\n    \"id\": \"I-Zf_dbNPLj5RfFW9BDk9\",\n    \"bookId\": 1,\n    \"customerName\": \"John\",\n    \"quantity\": 1,\n    \"timestamp\": 1771051678919\n}",
-            "createdAt": "2026-02-14T15:04:35.000Z",
-            "updatedAt": "2026-02-15T15:19:24.000Z",
-            "uid": "49633623-eaf283d3-e41d-4990-9277-692624424968"
-          }
-        ],
-        "createdAt": "2026-02-14T15:04:35.000Z",
-        "updatedAt": "2026-02-14T15:54:46.000Z",
-        "uid": "49633623-b8a1b1a9-e3a0-440d-8150-915bc510b3c1"
-      },
-      {
-        "name": "Delete an Order",
-        "id": "5d023efd-b1d8-4d19-a0cb-0bf73a13a3bf",
-        "protocolProfileBehavior": {
-          "disableBodyPruning": true
-        },
-        "request": {
-          "auth": {
-            "type": "bearer",
-            "bearer": [
-              {
-                "key": "token",
-                "value": "{{accesstocken}}",
-                "type": "string"
-              }
-            ]
-          },
-          "method": "DELETE",
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
-          ],
-          "body": {
-            "mode": "raw",
-            "raw": "{\n  \"customerName\": \"John Charles\"\n}",
-            "options": {
-              "raw": {
-                "headerFamily": "json",
-                "language": "json"
-              }
-            }
-          },
-          "url": {
-            "raw": "{{baseUrl}}/orders/:orderId?type=fiction",
-            "host": [
-              "{{baseUrl}}"
-            ],
-            "path": [
-              "orders",
-              ":orderId"
-            ],
-            "query": [
-              {
-                "description": "list the fictional books ",
-                "key": "type",
-                "value": "fiction"
-              }
-            ],
-            "variable": [
-              {
-                "key": "orderId",
-                "value": "I-Zf_dbNPLj5RfFW9BDk9"
-              }
-            ]
-          },
-          "description": "## Description\n\nThis Endpoint is for deleting a order. Needs the order id query parameter\n\nAfter deleting, check the order again with 'Get details of single book' end point\n\n## Example\n\n## Responce\n\n200 OK - Request is understood successfully and results are sent\n\n202 No Content\n\n1 - the order will be deleted\n\n## Path Variables\n\n## Authentication\n\nThis end ponit requires an authentication to submit or view a order."
-        },
-        "response": [
-          {
-            "id": "1689c36e-17c4-4c2d-9a4a-2899275b449f",
-            "name": "Get details of a single book",
-            "originalRequest": {
-              "method": "DELETE",
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                },
-                {
-                  "description": "Added as a part of security scheme: bearer",
-                  "key": "Authorization",
-                  "value": "Bearer <token>"
-                }
-              ],
-              "body": {
-                "mode": "raw",
-                "raw": "{\n  \"customerName\": \"John Charles\"\n}",
-                "options": {
-                  "raw": {
-                    "headerFamily": "json",
-                    "language": "json"
-                  }
-                }
-              },
-              "url": {
-                "raw": "{{baseUrl}}/orders/:orderId?type=fiction",
-                "host": [
-                  "{{baseUrl}}"
-                ],
-                "path": [
-                  "orders",
-                  ":orderId"
-                ],
-                "query": [
-                  {
-                    "description": "list the fictional books ",
-                    "key": "type",
-                    "value": "fiction"
-                  }
-                ],
-                "variable": [
-                  {
-                    "key": "orderId",
-                    "value": "I-Zf_dbNPLj5RfFW9BDk9"
-                  }
-                ]
-              }
-            },
-            "status": "OK",
-            "code": 200,
-            "_postman_previewlanguage": "Text",
-            "header": [
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Content-Length",
-                "value": "102"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Connection",
-                "value": "keep-alive"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Date",
-                "value": "Sat, 14 Feb 2026 07:26:42 GMT"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Amzn-Trace-Id",
-                "value": "Root=1-699023b2-189bc19c6369038860c7debd;Parent=48a5ff609c77b122;Sampled=0;Lineage=1:9ee0f5ed:0"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "x-amzn-RequestId",
-                "value": "7637e660-0c52-4e9c-b844-513813f82027"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Access-Control-Allow-Origin",
-                "value": "*"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Access-Control-Allow-Headers",
-                "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "x-amz-apigw-id",
-                "value": "YwqD_GN9IAMEUlQ="
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Access-Control-Allow-Methods",
-                "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Cache",
-                "value": "Miss from cloudfront"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "Via",
-                "value": "1.1 9a5f7993ae8aa6b11950605aada73158.cloudfront.net (CloudFront)"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Amz-Cf-Pop",
-                "value": "BLR50-P4"
-              },
-              {
-                "disabled": false,
-                "description": {
-                  "content": "",
-                  "type": "text/plain"
-                },
-                "key": "X-Amz-Cf-Id",
-                "value": "rt8rWgZebgFSNpN6F8amzjVfuBDN4S0D4WbCmw0I12oKnsntpDzuEg=="
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              }
-            ],
-            "cookie": [],
-            "responseTime": null,
-            "body": "{\n    \"id\": \"I-Zf_dbNPLj5RfFW9BDk9\",\n    \"bookId\": 1,\n    \"customerName\": \"John\",\n    \"quantity\": 1,\n    \"timestamp\": 1771051678919\n}",
-            "createdAt": "2026-02-14T15:55:22.000Z",
-            "updatedAt": "2026-02-15T15:19:39.000Z",
-            "uid": "49633623-1689c36e-17c4-4c2d-9a4a-2899275b449f"
-          }
-        ],
-        "createdAt": "2026-02-14T15:55:22.000Z",
-        "updatedAt": "2026-02-14T15:58:52.000Z",
-        "uid": "49633623-5d023efd-b1d8-4d19-a0cb-0bf73a13a3bf"
-      },
-      {
-        "name": "Register API Client",
-        "id": "de3a9986-ee6b-44ad-b06b-dcedd366d5a4",
-        "protocolProfileBehavior": {
-          "disableBodyPruning": true
-        },
-        "request": {
-          "method": "POST",
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
-          ],
-          "body": {
-            "mode": "raw",
-            "raw": "{\n  \"clientName\": \"Postman\",\n  \"clientEmail\": \"valenti111n@example.com\"\n}",
-            "options": {
-              "raw": {
-                "headerFamily": "json",
-                "language": "json"
-              }
-            }
-          },
-          "url": {
-            "raw": "{{baseUrl}}/api-clients",
-            "host": [
-              "{{baseUrl}}"
-            ],
-            "path": [
-              "api-clients"
-            ]
-          },
-          "description": "## Description\n\nFor reqesting a API token for Authentication\n\n## Response\n\n200 OK"
-        },
-        "response": [
-          {
-            "id": "c3bc9df5-d5ab-4ffd-9e9e-dba6bbffcba3",
-            "name": "409 Conflict",
-            "originalRequest": {
-              "method": "POST",
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                }
-              ],
-              "body": {
-                "mode": "raw",
-                "raw": "{\n  \"clientName\": \"Postman\",\n  \"clientEmail\": \"valenti111n@example.com\"\n}",
-                "options": {
-                  "raw": {
-                    "headerFamily": "json",
-                    "language": "json"
-                  }
-                }
-              },
-              "url": {
-                "raw": "{{baseUrl}}/api-clients",
-                "host": [
-                  "{{baseUrl}}"
-                ],
-                "path": [
-                  "api-clients"
-                ]
-              }
-            },
-            "status": "Conflict",
-            "code": 409,
-            "_postman_previewlanguage": "Text",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              },
-              {
-                "key": "Content-Length",
-                "value": "65"
-              },
-              {
-                "key": "Connection",
-                "value": "keep-alive"
-              },
-              {
-                "key": "Date",
-                "value": "Sun, 15 Feb 2026 15:20:12 GMT"
-              },
-              {
-                "key": "X-Amzn-Trace-Id",
-                "value": "Root=1-6991e42c-60f3fcb07dbe74ef77b21175;Parent=60f203241fee29a9;Sampled=0;Lineage=1:9ee0f5ed:0"
-              },
-              {
-                "key": "x-amzn-RequestId",
-                "value": "b54f1181-f351-4aa7-b3a0-5367d5e55ba0"
-              },
-              {
-                "key": "Access-Control-Allow-Origin",
-                "value": "*"
-              },
-              {
-                "key": "Access-Control-Allow-Headers",
-                "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
-              },
-              {
-                "key": "x-amz-apigw-id",
-                "value": "Y1CW9GBgoAMEjRg="
-              },
-              {
-                "key": "Access-Control-Allow-Methods",
-                "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
-              },
-              {
-                "key": "X-Cache",
-                "value": "Error from cloudfront"
-              },
-              {
-                "key": "Via",
-                "value": "1.1 497d3f19b33367b63390801fa4bbad18.cloudfront.net (CloudFront)"
-              },
-              {
-                "key": "X-Amz-Cf-Pop",
-                "value": "BLR50-P4"
-              },
-              {
-                "key": "X-Amz-Cf-Id",
-                "value": "f79PI5RDVj28cTUEPLUT1Mob73VLkCOPM9FzLRLxDOFupQyzeCc1ng=="
-              }
-            ],
-            "cookie": [],
-            "responseTime": null,
-            "body": "{\n    \"error\": \"API client already registered. Try a different email.\"\n}",
-            "createdAt": "2026-02-15T15:20:27.000Z",
-            "updatedAt": "2026-02-15T15:20:41.000Z",
-            "uid": "49633623-c3bc9df5-d5ab-4ffd-9e9e-dba6bbffcba3"
-          }
-        ],
-        "createdAt": "2026-02-14T04:47:22.000Z",
-        "updatedAt": "2026-02-15T15:20:27.000Z",
-        "uid": "49633623-de3a9986-ee6b-44ad-b06b-dcedd366d5a4"
-      }
-    ],
-    "event": [
-      {
-        "listen": "prerequest",
-        "script": {
-          "id": "89c8d8d2-f073-43ee-8f2c-5a87bdbcf166",
-          "type": "text/javascript",
-          "packages": {},
-          "exec": [
-            ""
           ]
-        }
+        },
+        "description": "## Description\n\nReturns a list of all available books in the library catalog\n\n## Response attributes\n\n| Field | Type | Description |\n| --- | --- | --- |\n| `id` | integer | **Required.** Unique identifier for the book. |\n| `name` | string | **Required.** The full title of the book. |\n| `type` | string | **Required.** The genre/category (e.g., fiction, non-fiction). |\n| `available` | boolean | Indicates if the book is currently in stock. |"
       },
-      {
-        "listen": "test",
-        "script": {
-          "id": "0beaa02f-afd0-4be2-8936-1c31cfeda6e9",
-          "type": "text/javascript",
-          "packages": {},
-          "exec": [
-            ""
+      "response": [
+        {
+          "name": "200 OK",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/books",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "books"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "description": "",
+              "type": "text"
+            },
+            {
+              "key": "Content-Length",
+              "value": "417"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 15 Feb 2026 15:34:15 GMT"
+            },
+            {
+              "key": "X-Amzn-Trace-Id",
+              "value": "Root=1-6991e776-766cf5bb5dfdd949404217af;Parent=5748dbda32eda685;Sampled=0;Lineage=1:9ee0f5ed:0"
+            },
+            {
+              "key": "x-amzn-RequestId",
+              "value": "0ea40abf-7310-467d-acd4-ccfc695165b4"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
+            },
+            {
+              "key": "x-amz-apigw-id",
+              "value": "Y1EapH1eoAMEXcA="
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
+            },
+            {
+              "key": "X-Cache",
+              "value": "Miss from cloudfront"
+            },
+            {
+              "key": "Via",
+              "value": "1.1 4f394bb2485ab8cd24ff0ea2fe25855e.cloudfront.net (CloudFront)"
+            },
+            {
+              "key": "X-Amz-Cf-Pop",
+              "value": "BLR50-P4"
+            },
+            {
+              "key": "X-Amz-Cf-Id",
+              "value": "IYPGyX78Ac6_6o0jGB9Z8zAyn6qY4odvtwr55Ds8M37ygXeZCfM34Q=="
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"name\": \"The Russian\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 3,\n        \"name\": \"The Vanishing Half\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 4,\n        \"name\": \"The Midnight Library\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Viscount Who Loved Me\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Just as I Am\",\n        \"type\": \"non-fiction\",\n        \"available\": false\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Untamed\",\n        \"type\": \"non-fiction\",\n        \"available\": true\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Get details of single book",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/books/:bookId",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "books",
+            ":bookId"
+          ],
+          "variable": [
+            {
+              "key": "bookId",
+              "value": "2",
+              "description": "The unique identifier for the book. Example: 2"
+            }
           ]
+        },
+        "description": "## Description\n\nReturns detailed information for a specific book using its unique ID. This includes the title, author, genre, and current stock availability."
+      },
+      "response": [
+        {
+          "name": "200 OK",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/books/:bookId",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "books",
+                ":bookId"
+              ],
+              "variable": [
+                {
+                  "key": "bookId",
+                  "value": "2",
+                  "description": "The unique identifier for the book. Example: 2"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "Text",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Content-Length",
+              "value": "284"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 15 Feb 2026 15:14:27 GMT"
+            },
+            {
+              "key": "X-Amzn-Trace-Id",
+              "value": "Root=1-6991e2d3-395c0fe80cc26296408f8737;Parent=5453a481f1ecc0db;Sampled=0;Lineage=1:9ee0f5ed:0"
+            },
+            {
+              "key": "x-amzn-RequestId",
+              "value": "ba3022db-863b-45b4-b6b2-4b2214e2debc"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
+            },
+            {
+              "key": "x-amz-apigw-id",
+              "value": "Y1BhLGqfIAMEgVg="
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
+            },
+            {
+              "key": "X-Cache",
+              "value": "Miss from cloudfront"
+            },
+            {
+              "key": "Via",
+              "value": "1.1 83467edef0f4c4a316c7c4b13c65c970.cloudfront.net (CloudFront)"
+            },
+            {
+              "key": "X-Amz-Cf-Pop",
+              "value": "BLR50-P4"
+            },
+            {
+              "key": "X-Amz-Cf-Id",
+              "value": "Vtp92FpOzH3aSEKOGa5UYpZPtTbYte-BURNG7YkfZ6sgQMQPMoo-Gg=="
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": 2,\n    \"entityType\": \"BOOK\",\n    \"available\": false,\n    \"timestamp\": 1752239490804,\n    \"created\": \"2025-07-11T13:11:30.804Z\",\n    \"GSI1SK\": \"BOOK#2\",\n    \"name\": \"Just as I Am\",\n    \"current-stock\": 0,\n    \"GSI1PK\": \"TYPE#non-fiction\",\n    \"price\": 20.33,\n    \"PK\": \"BOOK#2\",\n    \"author\": \"Cicely Tyson\",\n    \"type\": \"non-fiction\",\n    \"SK\": \"METADATA\"\n}"
         }
-      }
-    ],
-    "variable": [
-      {
-        "key": "baseURL",
-        "value": "",
-        "type": "any"
+      ]
+    },
+    {
+      "name": "Get all orders",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
       },
-      {
-        "key": "accesstocken",
-        "value": "",
-        "type": "any"
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{accesstocken}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{}",
+          "options": {
+            "raw": {
+              "headerFamily": "json",
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/orders",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "orders"
+          ],
+          "query": [
+            {
+              "key": "type",
+              "value": "fiction",
+              "description": "list the fictional books ",
+              "disabled": true
+            }
+          ]
+        },
+        "description": "## Description\n\nThis Endpoint is for viewing all the orders made in the library. This end point requires authorization.\n\n## Example\n\n## Responce\n\n200 OK - Request is understood successfully and results are sent\n\n## Parameters\n\n## Authentication\n\nThis end ponit requires an authentication to submit or view a order."
       },
-      {
-        "key": "baseUrl",
-        "value": "{{baseURL}}",
-        "type": "any"
+      "response": [
+        {
+          "name": "Get all orders",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "description": "Added as a part of security scheme: bearer",
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/orders?type=fiction",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "orders"
+              ],
+              "query": [
+                {
+                  "description": "list the fictional books ",
+                  "key": "type",
+                  "value": "fiction"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "Text",
+          "header": [
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Content-Length",
+              "value": "738"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Date",
+              "value": "Sat, 14 Feb 2026 07:20:23 GMT"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Amzn-Trace-Id",
+              "value": "Root=1-69902237-5a60abf60096d25603b71619;Parent=6a60561993adb75f;Sampled=0;Lineage=1:9ee0f5ed:0"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "x-amzn-RequestId",
+              "value": "73052792-e3ea-4a05-9516-92f44a30aeec"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "x-amz-apigw-id",
+              "value": "YwpIyEr2IAMEkLQ="
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Cache",
+              "value": "Miss from cloudfront"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Via",
+              "value": "1.1 4f394bb2485ab8cd24ff0ea2fe25855e.cloudfront.net (CloudFront)"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Amz-Cf-Pop",
+              "value": "BLR50-P4"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Amz-Cf-Id",
+              "value": "lSwtdQaXQgO5Dz6zDtdLKhN2bCp17PVzSzAX02WJl4B-Sx0ZewCR8Q=="
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": \"I-Zf_dbNPLj5RfFW9BDk9\",\n        \"bookId\": 1,\n        \"customerName\": \"John\",\n        \"quantity\": 1,\n        \"timestamp\": 1771051678919\n    },\n    {\n        \"id\": \"VFv0lQKxLOWtutdXPcRRj\",\n        \"bookId\": 1,\n        \"customerName\": \"Nicolas Daniel\",\n        \"quantity\": 1,\n        \"timestamp\": 1771052999455\n    },\n    {\n        \"id\": \"_xKIoQbD4hM4yaebjgJ2o\",\n        \"bookId\": 1,\n        \"customerName\": \"John\",\n        \"quantity\": 1,\n        \"timestamp\": 1771051739026\n    },\n    {\n        \"id\": \"foNVb6UZTCBxrUzdMtR7l\",\n        \"bookId\": 1,\n        \"customerName\": \"John\",\n        \"quantity\": 1,\n        \"timestamp\": 1771051485234\n    },\n    {\n        \"id\": \"gPxDtQ3P0nCjGZ35WgkVY\",\n        \"bookId\": 1,\n        \"customerName\": \"Ted Gibson\",\n        \"quantity\": 1,\n        \"timestamp\": 1771053022090\n    },\n    {\n        \"id\": \"yZ_J9XrJazq2eVGMonT4T\",\n        \"bookId\": 1,\n        \"customerName\": \"John\",\n        \"quantity\": 1,\n        \"timestamp\": 1771051368913\n    },\n    {\n        \"id\": \"zMW8CQlvd-wO6Giye-eEG\",\n        \"bookId\": 1,\n        \"customerName\": \"John\",\n        \"quantity\": 1,\n        \"timestamp\": 1771053546210\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "order a book",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{accesstocken}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"bookId\": 1,\n  \"customerName\": \"{{$randomFullName}}\"\n}",
+          "options": {
+            "raw": {
+              "headerFamily": "json",
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/orders?type=fiction",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "orders"
+          ],
+          "query": [
+            {
+              "description": "list the fictional books ",
+              "key": "type",
+              "value": "fiction"
+            }
+          ]
+        },
+        "description": "## Description\n\nThis Endpoint is for placing order for a book. This end point requires authorization.\n\n## Example\n\n```\n{\n  \"bookId\": 1,\n  \"customerName\": \"John\"\n}\n\n ```\n\n## Parameters\n\n## Authentication\n\nThis end ponit requires an authentication to submit or view a order."
+      },
+      "response": [
+        {
+          "name": "When book is not in stock",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "description": "Added as a part of security scheme: bearer",
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"bookId\": 1,\n  \"customerName\": \"{{$randomFullName}}\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/orders?type=fiction",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "orders"
+              ],
+              "query": [
+                {
+                  "description": "list the fictional books ",
+                  "key": "type",
+                  "value": "fiction"
+                }
+              ]
+            }
+          },
+          "status": "Not Found",
+          "code": 404,
+          "_postman_previewlanguage": "Text",
+          "header": [
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Content-Length",
+              "value": "55"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Date",
+              "value": "Sat, 14 Feb 2026 06:46:40 GMT"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Amzn-Trace-Id",
+              "value": "Root=1-69901a50-25d8868a622670820a628f0f;Parent=646ea0004ab3f3c3;Sampled=0;Lineage=1:9ee0f5ed:0"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "x-amzn-RequestId",
+              "value": "99fae9e7-7a4d-46d2-ad1e-1543571b9492"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "x-amz-apigw-id",
+              "value": "YwkMoFVOoAMEBOQ="
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Cache",
+              "value": "Error from cloudfront"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Via",
+              "value": "1.1 7f91d3358cb8b5b50ea653cbde2d162c.cloudfront.net (CloudFront)"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Amz-Cf-Pop",
+              "value": "BLR50-P4"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Amz-Cf-Id",
+              "value": "SaoYk3bugscOJGH4hU6l1Al6KWrOb5xvyLIq0NjWpz8hWndfL9oKlg=="
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"error\": \"This book is not in stock. Try again later.\"\n}"
+        },
+        {
+          "name": "Successfully ordered a book",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "description": "Added as a part of security scheme: bearer",
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"bookId\": 1,\n  \"customerName\": \"{{$randomFullName}}\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/orders?type=fiction",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "orders"
+              ],
+              "query": [
+                {
+                  "description": "list the fictional books ",
+                  "key": "type",
+                  "value": "fiction"
+                }
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "Text",
+          "header": [
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Content-Length",
+              "value": "50"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Date",
+              "value": "Sat, 14 Feb 2026 06:47:58 GMT"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Amzn-Trace-Id",
+              "value": "Root=1-69901a9e-6cf10ca77f99d52d2346ada6;Parent=11b0811325e11f7c;Sampled=0;Lineage=1:9ee0f5ed:0"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "x-amzn-RequestId",
+              "value": "a236b7c7-f272-4a7f-8fc5-7b9b58f9bf76"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "x-amz-apigw-id",
+              "value": "YwkY4Fh7IAMEbuw="
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Cache",
+              "value": "Miss from cloudfront"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Via",
+              "value": "1.1 7f91d3358cb8b5b50ea653cbde2d162c.cloudfront.net (CloudFront)"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Amz-Cf-Pop",
+              "value": "BLR50-P4"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Amz-Cf-Id",
+              "value": "f-_RO4VhQPGoJhnLiGofK_kQNpGNc69zAAk64lKad8UDK6XCmj5cMg=="
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"created\": true,\n    \"orderId\": \"I-Zf_dbNPLj5RfFW9BDk9\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get details of a single book",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{accesstocken}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{}",
+          "options": {
+            "raw": {
+              "headerFamily": "json",
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/orders/:orderId?type=fiction",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "orders",
+            ":orderId"
+          ],
+          "query": [
+            {
+              "description": "list the fictional books ",
+              "key": "type",
+              "value": "fiction"
+            }
+          ],
+          "variable": [
+            {
+              "key": "orderId",
+              "value": "I-Zf_dbNPLj5RfFW9BDk9"
+            }
+          ]
+        },
+        "description": "## Description\n\nThis Endpoint is for viewing all the orders made in the library. This end point requires authorization.\n\n## Example\n\n## Responce\n\n200 OK - Request is understood successfully and results are sent\n\n## Path Variables\n\n## Authentication\n\nThis end ponit requires an authentication to submit or view a order."
+      },
+      "response": [
+        {
+          "name": "Get details of a single book",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "description": "Added as a part of security scheme: bearer",
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/orders/:orderId?type=fiction",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "orders",
+                ":orderId"
+              ],
+              "query": [
+                {
+                  "description": "list the fictional books ",
+                  "key": "type",
+                  "value": "fiction"
+                }
+              ],
+              "variable": [
+                {
+                  "key": "orderId",
+                  "value": "I-Zf_dbNPLj5RfFW9BDk9"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "Text",
+          "header": [
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Content-Length",
+              "value": "102"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Date",
+              "value": "Sat, 14 Feb 2026 07:26:42 GMT"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Amzn-Trace-Id",
+              "value": "Root=1-699023b2-189bc19c6369038860c7debd;Parent=48a5ff609c77b122;Sampled=0;Lineage=1:9ee0f5ed:0"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "x-amzn-RequestId",
+              "value": "7637e660-0c52-4e9c-b844-513813f82027"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "x-amz-apigw-id",
+              "value": "YwqD_GN9IAMEUlQ="
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Cache",
+              "value": "Miss from cloudfront"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Via",
+              "value": "1.1 9a5f7993ae8aa6b11950605aada73158.cloudfront.net (CloudFront)"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Amz-Cf-Pop",
+              "value": "BLR50-P4"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Amz-Cf-Id",
+              "value": "rt8rWgZebgFSNpN6F8amzjVfuBDN4S0D4WbCmw0I12oKnsntpDzuEg=="
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": \"I-Zf_dbNPLj5RfFW9BDk9\",\n    \"bookId\": 1,\n    \"customerName\": \"John\",\n    \"quantity\": 1,\n    \"timestamp\": 1771051678919\n}"
+        }
+      ]
+    },
+    {
+      "name": "When book is not in stock",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{accesstocken}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"bookId\": 2,\r\n  \"customerName\": \"John\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/orders",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "orders"
+          ],
+          "query": [
+            {
+              "description": "list the fictional books ",
+              "key": "type",
+              "value": "fiction",
+              "disabled": true
+            }
+          ]
+        },
+        "description": "## Description\n\nExample for when the book is not in stock"
+      },
+      "response": [
+        {
+          "name": "404 Not Found",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"bookId\": 2,\r\n  \"customerName\": \"John\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/orders",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "orders"
+              ],
+              "query": [
+                {
+                  "description": "list the fictional books ",
+                  "key": "type",
+                  "value": "fiction",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "status": "Not Found",
+          "code": 404,
+          "_postman_previewlanguage": "Text",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Content-Length",
+              "value": "55"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 15 Feb 2026 15:17:36 GMT"
+            },
+            {
+              "key": "X-Amzn-Trace-Id",
+              "value": "Root=1-6991e390-58b4b8604ea11a93530ac0c3;Parent=78c3c217f77c1e91;Sampled=0;Lineage=1:9ee0f5ed:0"
+            },
+            {
+              "key": "x-amzn-RequestId",
+              "value": "ec0612cc-12e1-4aec-8aa6-7a1cb2b76588"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
+            },
+            {
+              "key": "x-amz-apigw-id",
+              "value": "Y1B-sF1CoAMEvjw="
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
+            },
+            {
+              "key": "X-Cache",
+              "value": "Error from cloudfront"
+            },
+            {
+              "key": "Via",
+              "value": "1.1 a1b65f70ffc6e3717e17091dd53c6dda.cloudfront.net (CloudFront)"
+            },
+            {
+              "key": "X-Amz-Cf-Pop",
+              "value": "BLR50-P4"
+            },
+            {
+              "key": "X-Amz-Cf-Id",
+              "value": "dukgZHLoez6uHPs3dCklL8KgY_jb8zOZu6z2Bn0PH_H_gO9SlgHPXA=="
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"error\": \"This book is not in stock. Try again later.\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Update an order",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{accesstocken}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"customerName\": \"John Charles\"\n}",
+          "options": {
+            "raw": {
+              "headerFamily": "json",
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/orders/:orderId?type=fiction",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "orders",
+            ":orderId"
+          ],
+          "query": [
+            {
+              "description": "list the fictional books ",
+              "key": "type",
+              "value": "fiction"
+            }
+          ],
+          "variable": [
+            {
+              "key": "orderId",
+              "value": "I-Zf_dbNPLj5RfFW9BDk9"
+            }
+          ]
+        },
+        "description": "## Description\n\nThis Endpoint is for updating the order. Need a body with the ID of the book to update. Needs the name that needs to be updated.\n\nAfter updating check the order again with 'Get details of single book' end point\n\n## Example\n\n## Responce\n\n200 OK - Request is understood successfully and results are sent\n\n202 No Content\n\n1 - the order will be updated with new name iven in the body\n\n## Path Variables\n\n## Authentication\n\nThis end ponit requires an authentication to submit or view a order."
+      },
+      "response": [
+        {
+          "name": "Get details of a single book",
+          "originalRequest": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "description": "Added as a part of security scheme: bearer",
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"customerName\": \"John Charles\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/orders/:orderId?type=fiction",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "orders",
+                ":orderId"
+              ],
+              "query": [
+                {
+                  "description": "list the fictional books ",
+                  "key": "type",
+                  "value": "fiction"
+                }
+              ],
+              "variable": [
+                {
+                  "key": "orderId",
+                  "value": "I-Zf_dbNPLj5RfFW9BDk9"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "Text",
+          "header": [
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Content-Length",
+              "value": "102"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Date",
+              "value": "Sat, 14 Feb 2026 07:26:42 GMT"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Amzn-Trace-Id",
+              "value": "Root=1-699023b2-189bc19c6369038860c7debd;Parent=48a5ff609c77b122;Sampled=0;Lineage=1:9ee0f5ed:0"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "x-amzn-RequestId",
+              "value": "7637e660-0c52-4e9c-b844-513813f82027"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "x-amz-apigw-id",
+              "value": "YwqD_GN9IAMEUlQ="
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Cache",
+              "value": "Miss from cloudfront"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Via",
+              "value": "1.1 9a5f7993ae8aa6b11950605aada73158.cloudfront.net (CloudFront)"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Amz-Cf-Pop",
+              "value": "BLR50-P4"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Amz-Cf-Id",
+              "value": "rt8rWgZebgFSNpN6F8amzjVfuBDN4S0D4WbCmw0I12oKnsntpDzuEg=="
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": \"I-Zf_dbNPLj5RfFW9BDk9\",\n    \"bookId\": 1,\n    \"customerName\": \"John\",\n    \"quantity\": 1,\n    \"timestamp\": 1771051678919\n}"
+        }
+      ]
+    },
+    {
+      "name": "Delete an Order",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{accesstocken}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"customerName\": \"John Charles\"\n}",
+          "options": {
+            "raw": {
+              "headerFamily": "json",
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/orders/:orderId?type=fiction",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "orders",
+            ":orderId"
+          ],
+          "query": [
+            {
+              "description": "list the fictional books ",
+              "key": "type",
+              "value": "fiction"
+            }
+          ],
+          "variable": [
+            {
+              "key": "orderId",
+              "value": "I-Zf_dbNPLj5RfFW9BDk9"
+            }
+          ]
+        },
+        "description": "## Description\n\nThis Endpoint is for deleting a order. Needs the order id query parameter\n\nAfter deleting, check the order again with 'Get details of single book' end point\n\n## Example\n\n## Responce\n\n200 OK - Request is understood successfully and results are sent\n\n202 No Content\n\n1 - the order will be deleted\n\n## Path Variables\n\n## Authentication\n\nThis end ponit requires an authentication to submit or view a order."
+      },
+      "response": [
+        {
+          "name": "Get details of a single book",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "description": "Added as a part of security scheme: bearer",
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"customerName\": \"John Charles\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/orders/:orderId?type=fiction",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "orders",
+                ":orderId"
+              ],
+              "query": [
+                {
+                  "description": "list the fictional books ",
+                  "key": "type",
+                  "value": "fiction"
+                }
+              ],
+              "variable": [
+                {
+                  "key": "orderId",
+                  "value": "I-Zf_dbNPLj5RfFW9BDk9"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "Text",
+          "header": [
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Content-Length",
+              "value": "102"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Date",
+              "value": "Sat, 14 Feb 2026 07:26:42 GMT"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Amzn-Trace-Id",
+              "value": "Root=1-699023b2-189bc19c6369038860c7debd;Parent=48a5ff609c77b122;Sampled=0;Lineage=1:9ee0f5ed:0"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "x-amzn-RequestId",
+              "value": "7637e660-0c52-4e9c-b844-513813f82027"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "x-amz-apigw-id",
+              "value": "YwqD_GN9IAMEUlQ="
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Cache",
+              "value": "Miss from cloudfront"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "Via",
+              "value": "1.1 9a5f7993ae8aa6b11950605aada73158.cloudfront.net (CloudFront)"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Amz-Cf-Pop",
+              "value": "BLR50-P4"
+            },
+            {
+              "disabled": false,
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "key": "X-Amz-Cf-Id",
+              "value": "rt8rWgZebgFSNpN6F8amzjVfuBDN4S0D4WbCmw0I12oKnsntpDzuEg=="
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": \"I-Zf_dbNPLj5RfFW9BDk9\",\n    \"bookId\": 1,\n    \"customerName\": \"John\",\n    \"quantity\": 1,\n    \"timestamp\": 1771051678919\n}"
+        }
+      ]
+    },
+    {
+      "name": "Register API Client",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"clientName\": \"Postman\",\n  \"clientEmail\": \"valenti111n@example.com\"\n}",
+          "options": {
+            "raw": {
+              "headerFamily": "json",
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api-clients",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api-clients"
+          ]
+        },
+        "description": "## Description\n\nFor reqesting a API token for Authentication\n\n## Response\n\n200 OK"
+      },
+      "response": [
+        {
+          "name": "409 Conflict",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"clientName\": \"Postman\",\n  \"clientEmail\": \"valenti111n@example.com\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api-clients",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api-clients"
+              ]
+            }
+          },
+          "status": "Conflict",
+          "code": 409,
+          "_postman_previewlanguage": "Text",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Content-Length",
+              "value": "65"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 15 Feb 2026 15:20:12 GMT"
+            },
+            {
+              "key": "X-Amzn-Trace-Id",
+              "value": "Root=1-6991e42c-60f3fcb07dbe74ef77b21175;Parent=60f203241fee29a9;Sampled=0;Lineage=1:9ee0f5ed:0"
+            },
+            {
+              "key": "x-amzn-RequestId",
+              "value": "b54f1181-f351-4aa7-b3a0-5367d5e55ba0"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Access-Control-Allow-Headers",
+              "value": "Content-Type, Authorization, X-Amz-Date, X-Api-Key, X-Amz-Security-Token"
+            },
+            {
+              "key": "x-amz-apigw-id",
+              "value": "Y1CW9GBgoAMEjRg="
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET, POST, PUT, DELETE, OPTIONS, PATCH"
+            },
+            {
+              "key": "X-Cache",
+              "value": "Error from cloudfront"
+            },
+            {
+              "key": "Via",
+              "value": "1.1 497d3f19b33367b63390801fa4bbad18.cloudfront.net (CloudFront)"
+            },
+            {
+              "key": "X-Amz-Cf-Pop",
+              "value": "BLR50-P4"
+            },
+            {
+              "key": "X-Amz-Cf-Id",
+              "value": "f79PI5RDVj28cTUEPLUT1Mob73VLkCOPM9FzLRLxDOFupQyzeCc1ng=="
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"error\": \"API client already registered. Try a different email.\"\n}"
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [
+          ""
+        ]
       }
-    ]
-  }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseURL",
+      "value": "",
+      "type": "any"
+    },
+    {
+      "key": "accesstocken",
+      "value": "",
+      "type": "any"
+    },
+    {
+      "key": "baseUrl",
+      "value": "{{baseURL}}",
+      "type": "any"
+    }
+  ]
 }
