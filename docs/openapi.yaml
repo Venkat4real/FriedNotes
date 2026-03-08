@@ -49,19 +49,37 @@ info:
 servers:
   - url: undefined://{{baseUrl}}
   - url: undefined://{{baseURL}}
+tags:
+  - name: Authentication
+  - name: Orders
 paths:
-  /status:
-    get:
+  /api-clients:
+    post:
       tags:
-        - General
-      summary: API Status
-      description: >-
+        - Authentication
+      summary: Register API Client
+      description: |-
         ## Description
 
+        For reqesting a API token for Authentication
 
-        Retrieves the current operational status of the Books API. Use this
-        endpoint to verify server availability before performing CRUD
-        operations.
+        ## Response
+
+        200 OK
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                clientName: Postman
+                clientEmail: valenti111n@example.com
+      parameters:
+        - name: Content-Type
+          in: header
+          schema:
+            type: string
+          example: application/json
       responses:
         '200':
           description: Successful response
@@ -70,7 +88,7 @@ paths:
   /books:
     get:
       tags:
-        - General
+        - Orders
       summary: Get list of all books
       description: >-
         ## Description
@@ -119,7 +137,7 @@ paths:
   /books/:bookId:
     get:
       tags:
-        - General
+        - Orders
       summary: Get details of single book
       description: >-
         ## Description
@@ -135,7 +153,7 @@ paths:
   /orders:
     get:
       tags:
-        - General
+        - Orders
       summary: Get all orders
       description: >-
         ## Description
@@ -209,7 +227,7 @@ paths:
   /orders/:orderId:
     get:
       tags:
-        - General
+        - Orders
       summary: Get details of a single book
       description: >-
         ## Description
@@ -369,33 +387,18 @@ paths:
           description: Successful response
           content:
             application/json: {}
-  /api-clients:
-    post:
+  /status:
+    get:
       tags:
         - General
-      summary: Register API Client
-      description: |-
+      summary: API Status
+      description: >-
         ## Description
 
-        For reqesting a API token for Authentication
 
-        ## Response
-
-        200 OK
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-              example:
-                clientName: Postman
-                clientEmail: valenti111n@example.com
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+        Retrieves the current operational status of the Books API. Use this
+        endpoint to verify server availability before performing CRUD
+        operations.
       responses:
         '200':
           description: Successful response
