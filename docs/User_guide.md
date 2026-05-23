@@ -2,87 +2,178 @@
 layout: null
 ---
 
+# Joplin User Guide
 
+## Introduction
 
-# Talent Steam
+Joplin is an open source note-taking and personal knowledge management application. This guide covers the most important workflows for using Joplin on desktop, mobile, and web, including note creation, organization, syncing, markdown editing, attachments, and search.
 
-## Introduction 
+## Getting Started
 
-This product is designed for onbording the employee's. The Onboarding module helps the transition from "Candidate" to "Employee."  This guide provides details about the product, setting up their digital profile, assigning mandatory training, provisioning their hardware, and other configurations.
+### Install Joplin
 
+- Visit https://joplinapp.org and download the version for Windows, macOS, Linux, Android, or iOS.
+- Alternatively, install from the command line for desktop builds or use the portable app when available.
+- For open source development, the repository is available at https://github.com/joplinapp/joplin.
 
-### Prerequisites
-* The candidate must have digitally signed their Offer Letter.
+#### Windows installer note
 
-* You must have Admin or HR Manager permissions in TalentStream.
+- When installing on Windows, you may be prompted to choose whether the app is available for all users or only your account.
+- The screenshot below shows the installer option page for Joplin 3.6.14 where you can select **Only for me** if you want a user-specific install.
 
-> Note: Contact the Support team (Suportteam@test.com) to activate this product for your account.
+<img src="./assets/joplin-windows-installer.png" alt="Joplin Windows installer user selection" width="600" />
 
-> Internal Note: Steps to enable the product for the customer account.
+- After choosing the install scope, click **Install** to begin.
+- When installation completes, click **Finish** or use the Joplin shortcut to launch the app.
 
+<img src="./assets/joplin-windows-installer-completed.png" alt="Joplin Windows installer completed" width="600" />
 
+- When Joplin opens for the first time, you may see a welcome screen with options to import notes or configure sync.
+- Select **Get Started** or continue with the default setup to open the main app window.
 
-### Initiate Onboarding
+<img src="./assets/joplin-windows-installer-welcome-screen.png" alt="Joplin welcome screen" width="600" />
 
+### Create your first notebook
 
-Go to the _People dashboard_ screen and select _Onboarding Requests_ tab.
+1. Open Joplin.
+2. In the left sidebar, click the notebook icon.
+3. Select **New notebook**.
+4. Enter a name such as `Work`, `Personal`, or `Research`.
 
-Locate the Employee and click _Start Onboarding_ button.
+> Tip: Use notebooks to separate major contexts like projects, study, and personal notes.
 
-<img width="469" height="370" alt="image" src="https://github.com/user-attachments/assets/dec3779f-c881-4d41-9105-a9e04d6cbf8e" />
+## Notes and Organization
 
+### Create a new note
 
-From the dropdown, select the Onboarding Template. The available templates are 
-* Engineering - India
-* Sales - Global
+- Click the **New note** button.
+- Give the note a title and start typing in the editor.
+- Notes are saved automatically as you type.
 
+### Organize with notebooks
 
-Selecitng anyone of the templates will automatically populate their task list the employees have to complete.
+- Drag notes into notebooks from the sidebar.
+- Use nested notebooks to group related topics (for example, `Projects > FriedNotes`).
+- Rename or delete notebooks by right-clicking them.
 
-### Document Collection & Verification
+### Use tags for quick filtering
 
+- Add tags from the note sidebar by typing a tag name and pressing Enter.
+- Example tags: `meeting`, `reference`, `todo`, `recipe`.
+- Click a tag in the sidebar to see all notes that use it.
 
-The system will automatically email the employee a link to their New Hire Portal.
+## Editing with Markdown
 
-Required Documents: You must verify the uploaded copies of their Govt ID (Aadhaar/PAN) and Bank Details for payroll.
+### Markdown basics
 
-Status Tracking: Use the Document Tracker to see which items are "Pending" or "Action Required."
+Joplin uses Markdown for formatting notes. Common syntax includes:
 
-<img width="476" height="362" alt="image" src="https://github.com/user-attachments/assets/fc4f5a9f-700a-48da-b078-119803dddf7b" />
+- `# Heading 1` for headings
+- `**bold**` and `*italic*` for text styles
+- `-` or `*` for lists
+- `` `inline code` `` for code snippets
+- `> blockquote` for quoted text
 
-### Provisioning IT Assets
+### Adding checklists
 
+- Create a checklist item using `- [ ] Task name`.
+- Mark it complete with `- [x] Task name`.
+- Checklists are great for task lists, meeting agendas, or action items.
 
-Click the Assets tab within the employee profile.
+### Code blocks and attachments
 
-Select the hardware to be allocated (e.g., MacBook Pro M3, Monitor, Headset).
+- Use triple backticks for code blocks:
 
-<img width="470" height="362" alt="image" src="https://github.com/user-attachments/assets/5d6b30da-ef55-4238-b252-2b9ee7501e05" />
+  ```
+  ```python
+  print("Hello, Joplin")
+  ```
+  ```
 
+- Add attachments with **Insert > Attach file** or drag files directly into a note.
+- Attachments can include images, PDFs, and documents.
 
-Click Notify IT. This triggers a ticket in the IT department's queue with the employee's start date and shipping address.
+## Syncing Notes
 
-### Assigning Training Modules
+### Configure sync
 
+1. Open **Tools > Options > Synchronization**.
+2. Choose your sync target: **Dropbox**, **OneDrive**, **Nextcloud**, **WebDAV**, or **File system**.
+3. Enter your account or server details.
+4. Click **Synchronize** to start.
 
-Scroll to the Compliance & Training section.
+### Sync workflow
 
-Assign the mandatory "Code of Conduct" and "Data Privacy" modules.
+- Sync regularly to keep desktop and mobile notes aligned.
+- Joplin stores note revisions, so accidental changes can be recovered.
+- If you use multiple devices, sync after finishing work on one device before switching.
 
-> Note: These modules have a 7-day deadline from the date of joining. The system will send automated reminders on Day 3 and Day 5.
+## Search and Find
 
-## Onboarding Status WorkflowFrequently Asked Questions
+### Search notes
 
+- Use the search field at the top of the notes list.
+- Search supports keywords, tags, titles, and full note contents.
+- Use `tag:work` or `notebook:Projects` filters for more precise results.
 
-Q: Can I change the start date after onboarding has started?
+### Advanced search
 
-A: Yes. Go to Profile > Job Details and edit the "Effective Date." TalentStream will automatically update the deadlines for all assigned tasks and notify the IT and Finance teams.
+- Search operators include `tag:`, `notebook:`, `type:`, and `created:`.
+- Example: `tag:meeting notebook:Work`.
+- This helps when you are tracking notes across many notebooks.
 
-Q: What if the employee hasn't received their portal link?
+## Import and Export
 
-A: Check the Communication Log in their profile. You can click Resend Invite to trigger a new secure link to their personal email address.
+### Import notes
 
-<img width="470" height="362" alt="image" src="https://github.com/user-attachments/assets/0f3095ae-ef05-433a-aeb2-b12dd5f46eb7" />
+- Go to **File > Import**.
+- Supported formats include JEX, Markdown, Evernote ENEX, and plain text.
+- Use import when moving notes from another app or restoring backups.
+
+### Export notes
+
+- Select a note or notebook and choose **File > Export**.
+- Export formats include `Markdown`, `PDF`, `HTML`, and `JEX`.
+- Export useful notes for sharing or storing as a backup.
+
+## Mobile Usage
+
+### Install and sync mobile
+
+- Install Joplin Mobile from Google Play or the Apple App Store.
+- Open the app and choose **Configuration > Synchronization target**.
+- Use the same sync target as desktop for seamless note access.
+
+### Mobile features
+
+- Capture quick notes with the mobile editor.
+- Use the camera to attach images directly to notes.
+- Swipe gestures help move notes, archive, or delete quickly.
+
+## Tips for Productivity
+
+- Use a consistent notebook and tag structure.
+- Create templates for recurring note types such as meeting notes, daily journals, or project plans.
+- Pin important notes to keep them easy to access.
+- Use the map view or note links for personal knowledge management.
+
+## Frequently Asked Questions
+
+Q: Can I use Joplin offline?
+
+A: Yes. Joplin works offline and syncs changes when a network connection is available.
+
+Q: How do I backup my notes?
+
+A: Export your notes to `JEX` or Markdown, or sync to a reliable cloud service.
+
+Q: Is Joplin truly open source?
+
+A: Yes. Joplin is licensed under GPLv3 and its source code is available on GitHub.
+
+Q: Can I encrypt my notes?
+
+A: Yes. Enable **Encryption Options** under **Tools > Options > Encryption** to secure notes and attachments.
 
 
 
