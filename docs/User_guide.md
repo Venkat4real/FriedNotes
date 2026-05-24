@@ -8,33 +8,30 @@ layout: null
 
 Joplin is an open source note-taking and personal knowledge management application. This guide covers the most important workflows for using Joplin on desktop, mobile, and web, including note creation, organization, syncing, markdown editing, attachments, and search.
 
-## Getting Started
-
-This guide has details about installing Joplin for windows, create a new note, and sync the note.
-
 ### Install Joplin
 
-- Visit https://joplinapp.org and download the version for Windows, macOS, Linux, Android, or iOS.
+- Visit https://joplinapp.org and download the version for Windows.
 - Alternatively, install from the command line for desktop builds or use the portable app when available.
 - For open source development, the repository is available at https://github.com/joplinapp/joplin.
 
 #### Windows installation 
 
-- When installing on Windows, you may be prompted to choose whether the app is available for all users or only your account.
-- The screenshot below shows the installer option page for Joplin 3.6.14 where you can select **Only for me** if you want a user-specific install.
+- When installing on Windows, you will be prompted to choose whether the app is available for all users or only your account as shown below.
+- Users can select Anyone who uses computer (All Users) or only for me (Admin name)
 
 <img src="./assets/joplin-windows-installer.png" alt="Joplin Windows installer user selection" width="600" />
 
-- After choosing the install scope, click **Install** to begin.
-- When installation completes, click **Finish** or use the Joplin shortcut to launch the app.
+- After choosing the install Users, click **Install**.
+- When installation completes, click **Finish** button, also Users can enable the Run Joplin option to launch the app after clicking on the **Finish** button.
 
 <img src="./assets/joplin-windows-installer-completed.png" alt="Joplin Windows installer completed" width="600" />
 
-- When Joplin opens for the first time, you may see a welcome screen with options to import notes or configure sync.
-- Select **Get Started** or continue with the default setup to open the main app window.
+
 
 ### Welcome screen (Dashboard)
 
+- When Joplin opens for the first time, you will see a welcome screen with options to import notes or configure sync.
+- Select **Get Started** or continue with the default setup to open the main app window.
 - **Get Started**: Opens the main Joplin workspace so you can begin creating notes immediately.
 - **Import**: Allows you to import notes from other services or backup files if you already have existing Joplin data.
 - **Configure Sync**: Opens the synchronization settings so you can connect Dropbox, OneDrive, WebDAV, Nextcloud, or local file sync before using the app.
@@ -42,38 +39,17 @@ This guide has details about installing Joplin for windows, create a new note, a
 
 <img src="./assets/joplin-windows-installer-welcome-screen.png" alt="Joplin welcome screen" width="600" />
 
-### Create your first notebook
+### Create your first note
 
 1. Open Joplin.
-2. In the left sidebar, click the notebook icon.
+2. In the left sidebar, click the **New note** icon.
 <img src="./assets/joplin-windows-installer-Adding-new-note.png" alt="Joplin welcome screen" width="600" />
 
+5. Enter the notes. The preview of the notes will be displayed in the right side.
 
-3. Select **New notebook**.
-4. Enter a name such as `Work`, `Personal`, or `Research`.
-
+<img src="./assets/joplin-windows-installer-Added-new-note.png" alt="Joplin welcome screen" width="600" />
 
 > Tip: Use notebooks to separate major contexts like projects, study, and personal notes.
-
-## Notes and Organization
-
-### Create a new note
-
-- Click the **New note** button.
-- Give the note a title and start typing in the editor.
-- Notes are saved automatically as you type.
-
-### Organize with notebooks
-
-- Drag notes into notebooks from the sidebar.
-- Use nested notebooks to group related topics (for example, `Projects > FriedNotes`).
-- Rename or delete notebooks by right-clicking them.
-
-### Use tags for quick filtering
-
-- Add tags from the note sidebar by typing a tag name and pressing Enter.
-- Example tags: `meeting`, `reference`, `todo`, `recipe`.
-- Click a tag in the sidebar to see all notes that use it.
 
 ## Editing with Markdown
 
@@ -105,6 +81,61 @@ Joplin uses Markdown for formatting notes. Common syntax includes:
 
 - Add attachments with **Insert > Attach file** or drag files directly into a note.
 - Attachments can include images, PDFs, and documents.
+
+
+### Save & Sync
+
+- Click **Save** or use **Ctrl+S** to save the current note.
+
+The following screen shows the sync options available in Joplin:
+
+- **Joplin Cloud**: the native, fully integrated sync service optimized for notes and Joplin-specific features. Click ([here](https://joplinapp.org/plans/)) to learn more about Joplin Cloud.
+- **Dropbox**: a general cloud storage provider that syncs your Joplin note files across devices.
+- **OneDrive**: Microsoft’s cloud storage service, also used to sync Joplin note files between devices.
+
+<img src="./assets/joplin-windows-installer-saving-new-note.png" alt="Joplin sync options screen" width="600" />
+
+- Select the preferred colud storage option 
+
+Note: the same cloud has to be selected in other devices to Sync with windows.
+
+### Syncing via OneDrive
+
+1. Choose **OneDrive** as your sync target in Joplin.
+2. Sign in with your Microsoft account when prompted.
+3. Allow Joplin to connect to OneDrive and grant the required access.
+4. Wait for the confirmation that syncing is complete.
+
+<img src="./assets/joplin-windows-Onedrive-sync.png" alt="Joplin OneDrive sync setup" width="600" />
+
+<img src="./assets/joplin-windows-Onedrive-sync-accept.png" alt="OneDrive sync permission acceptance" width="600" />
+
+<img src="./assets/joplin-windows-Onedrive-sync-success.png" alt="OneDrive sync success confirmation" width="600" />
+
+5. The following success text will be displayed.
+
+<img src="./assets/joplin-windows-Onedrive-sync-success2.png" alt="OneDrive sync success confirmation" width="600" />
+
+## Notes and Organization
+
+### Create a new note
+
+- Click the **New note** button.
+- Give the note a title and start typing in the editor.
+- Notes are saved automatically as you type.
+
+### Organize with notebooks
+
+- Drag notes into notebooks from the sidebar.
+- Use nested notebooks to group related topics (for example, `Projects > FriedNotes`).
+- Rename or delete notebooks by right-clicking them.
+
+### Use tags for quick filtering
+
+- Add tags from the note sidebar by typing a tag name and pressing Enter.
+- Example tags: `meeting`, `reference`, `todo`, `recipe`.
+- Click a tag in the sidebar to see all notes that use it.
+
 
 ## Syncing Notes
 
