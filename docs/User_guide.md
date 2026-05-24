@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: User Guide
+title: Joplin User Guide
 description: Learn how to create, organize, and sync notes in Fried Notes.
 ---
 
@@ -8,7 +8,7 @@ description: Learn how to create, organize, and sync notes in Fried Notes.
 
 ## Introduction
 
-Joplin is an open source note-taking and personal knowledge management application. This guide covers the most important workflows for using Joplin on desktop, mobile, and web, including note creation, organization, syncing, markdown editing, attachments, and search.
+Joplin is an open source note-taking and personal knowledge management application. This guide covers the most important workflows for using Joplin on desktop, and mobile, including installation on windows, adding a new note, saving the notes on cloud, syncing, installation on mobile (Android), and viewing the online notes.
 
 ### Install Joplin
 
@@ -28,11 +28,9 @@ Joplin is an open source note-taking and personal knowledge management applicati
 
 <img src="./assets/joplin-windows-installer-completed.png" alt="Joplin Windows installer completed" width="600" />
 
-
-
 ### Welcome screen (Dashboard)
 
-- When Joplin opens for the first time, you will see a welcome screen with options to import notes or configure sync.
+- When Joplin opens for the first time, you will see a welcome screen with with some example notes. Users can refer to those to learn more about the Joplin.
 - Select **Get Started** or continue with the default setup to open the main app window.
 - **Get Started**: Opens the main Joplin workspace so you can begin creating notes immediately.
 - **Import**: Allows you to import notes from other services or backup files if you already have existing Joplin data.
