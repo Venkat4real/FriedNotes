@@ -1,7 +1,8 @@
 ---
-layout: null
+layout: docs
+title: Release Notes
+description: Keep up with the latest product updates, releases, and feature enhancements.
 ---
-
 
 ## Release notes 1.1 (Jan 4 – 18)
 

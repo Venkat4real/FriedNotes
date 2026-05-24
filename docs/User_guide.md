@@ -1,5 +1,7 @@
 ---
-layout: null
+layout: docs
+title: User Guide
+description: Learn how to create, organize, and sync notes in Fried Notes.
 ---
 
 # Joplin User Guide

@@ -1,5 +1,7 @@
 ---
-layout: null
+layout: docs
+title: Mobile User Guide
+description: Step-by-step instructions for using the mobile version of Fried Notes.
 ---
 
 # Joplin Mobile User Guide

@@ -1,5 +1,7 @@
 ---
-layout: null
+layout: docs
+title: Open Source Contributions
+description: Explore contributions and community work around Fried Notes.
 ---
 
 Some of the contributions I have made:
