@@ -4,6 +4,14 @@ title: Release Notes
 description: Keep up with the latest product updates, releases, and feature enhancements.
 ---
 
+> This release notes file is automatically updated by GitHub Actions.
+> New PRs merged into the repository are added instantly, and full deployment runs every Tuesday.
+> The next scheduled deployment is Tuesday at 09:00 UTC.
+
+## Auto-generated release notes
+
+- This section receives automated updates from merged PRs and weekly deployment jobs.
+
 ## Release notes 1.1 (Jan 4 – 18)
 
 #### Module XY
