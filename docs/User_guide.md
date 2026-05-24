@@ -10,13 +10,15 @@ Joplin is an open source note-taking and personal knowledge management applicati
 
 ## Getting Started
 
+This guide has details about installing Joplin for windows, create a new note, and sync the note.
+
 ### Install Joplin
 
 - Visit https://joplinapp.org and download the version for Windows, macOS, Linux, Android, or iOS.
 - Alternatively, install from the command line for desktop builds or use the portable app when available.
 - For open source development, the repository is available at https://github.com/joplinapp/joplin.
 
-#### Windows installer note
+#### Windows installation 
 
 - When installing on Windows, you may be prompted to choose whether the app is available for all users or only your account.
 - The screenshot below shows the installer option page for Joplin 3.6.14 where you can select **Only for me** if you want a user-specific install.
@@ -31,14 +33,25 @@ Joplin is an open source note-taking and personal knowledge management applicati
 - When Joplin opens for the first time, you may see a welcome screen with options to import notes or configure sync.
 - Select **Get Started** or continue with the default setup to open the main app window.
 
+### Welcome screen (Dashboard)
+
+- **Get Started**: Opens the main Joplin workspace so you can begin creating notes immediately.
+- **Import**: Allows you to import notes from other services or backup files if you already have existing Joplin data.
+- **Configure Sync**: Opens the synchronization settings so you can connect Dropbox, OneDrive, WebDAV, Nextcloud, or local file sync before using the app.
+- **Learn More**: Displays help links and documentation resources for using Joplin.
+
 <img src="./assets/joplin-windows-installer-welcome-screen.png" alt="Joplin welcome screen" width="600" />
 
 ### Create your first notebook
 
 1. Open Joplin.
 2. In the left sidebar, click the notebook icon.
+<img src="./assets/joplin-windows-installer-Adding-new-note.png" alt="Joplin welcome screen" width="600" />
+
+
 3. Select **New notebook**.
 4. Enter a name such as `Work`, `Personal`, or `Research`.
+
 
 > Tip: Use notebooks to separate major contexts like projects, study, and personal notes.
 
