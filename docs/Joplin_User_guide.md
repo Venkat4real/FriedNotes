@@ -8,7 +8,7 @@ description: Learn how to create, organize, and sync notes in Fried Notes.
 
 ## Introduction
 
-Joplin is an open source note-taking and personal knowledge management application. This guide covers the most important workflows for using Joplin on desktop, and mobile, including installation on windows, adding a new note, saving the notes on cloud, syncing, installation on mobile (Android), and viewing the online notes.
+Joplin is an open-source note-taking and personal knowledge management application. This guide covers the most important workflows for using Joplin on desktop and mobile, including installation on Windows, adding a new note, saving the notes on the cloud, syncing, installation on mobile (Android), and viewing the online notes.
 
 ### Install Joplin
 
@@ -18,24 +18,19 @@ Joplin is an open source note-taking and personal knowledge management applicati
 
 #### Windows installation 
 
-- When installing on Windows, you will be prompted to choose whether the app is available for all users or only your account as shown below.
-- Users can select Anyone who uses computer (All Users) or only for me (Admin name)
+- When installing on Windows, you will be prompted to choose whether the app is available for all users or only your account, as shown below.
+- Users can select Anyone who uses the computer (All Users) or only for me (Admin name).
 
 <img src="./assets/joplin-windows-installer.png" alt="Joplin Windows installer user selection" width="600" />
 
 - After choosing the install Users, click **Install**.
-- When installation completes, click **Finish** button, also Users can enable the Run Joplin option to launch the app after clicking on the **Finish** button.
+- When installation completes, click the **Finish** button. Users can also enable the Run Joplin option to launch the app after clicking on the **Finish** button.
 
 <img src="./assets/joplin-windows-installer-completed.png" alt="Joplin Windows installer completed" width="600" />
 
 ### Welcome screen (Dashboard)
 
-- When Joplin opens for the first time, you will see a welcome screen with with some example notes. Users can refer to those to learn more about the Joplin.
-- Select **Get Started** or continue with the default setup to open the main app window.
-- **Get Started**: Opens the main Joplin workspace so you can begin creating notes immediately.
-- **Import**: Allows you to import notes from other services or backup files if you already have existing Joplin data.
-- **Configure Sync**: Opens the synchronization settings so you can connect Dropbox, OneDrive, WebDAV, Nextcloud, or local file sync before using the app.
-- **Learn More**: Displays help links and documentation resources for using Joplin.
+- When Joplin opens for the first time, you will see a welcome screen with some example notes. Users can refer to those to learn more about Joplin.
 
 <img src="./assets/joplin-windows-installer-welcome-screen.png" alt="Joplin welcome screen" width="600" />
 
@@ -45,7 +40,7 @@ Joplin is an open source note-taking and personal knowledge management applicati
 2. In the left sidebar, click the **New note** icon.
 <img src="./assets/joplin-windows-installer-Adding-new-note.png" alt="Joplin welcome screen" width="600" />
 
-5. Enter the notes. The preview of the notes will be displayed in the right side.
+5. Enter the notes. The preview of the notes will be displayed on the right side.
 
 <img src="./assets/joplin-windows-installer-Added-new-note.png" alt="Joplin welcome screen" width="600" />
 
@@ -85,7 +80,7 @@ Joplin uses Markdown for formatting notes. Common syntax includes:
 
 ### Save & Sync
 
-- Click **Save** or use **Ctrl+S** to save the current note.
+- Use **Ctrl+S** to save the current note.
 
 The following screen shows the sync options available in Joplin:
 
@@ -95,9 +90,9 @@ The following screen shows the sync options available in Joplin:
 
 <img src="./assets/joplin-windows-installer-saving-new-note.png" alt="Joplin sync options screen" width="600" />
 
-- Select the preferred colud storage option 
+- Select the preferred cloud storage option 
 
-Note: the same cloud has to be selected in other devices to Sync with windows.
+Note: the same cloud has to be selected on other devices to sync with Windows.
 
 ### Syncing via OneDrive
 
@@ -116,27 +111,6 @@ Note: the same cloud has to be selected in other devices to Sync with windows.
 
 <img src="./assets/joplin-windows-Onedrive-sync-success2.png" alt="OneDrive sync success confirmation" width="600" />
 
-## Notes and Organization
-
-### Create a new note
-
-- Click the **New note** button.
-- Give the note a title and start typing in the editor.
-- Notes are saved automatically as you type.
-
-### Organize with notebooks
-
-- Drag notes into notebooks from the sidebar.
-- Use nested notebooks to group related topics (for example, `Projects > FriedNotes`).
-- Rename or delete notebooks by right-clicking them.
-
-### Use tags for quick filtering
-
-- Add tags from the note sidebar by typing a tag name and pressing Enter.
-- Example tags: `meeting`, `reference`, `todo`, `recipe`.
-- Click a tag in the sidebar to see all notes that use it.
-
-
 ## Syncing Notes
 
 ### Configure sync
@@ -152,41 +126,13 @@ Note: the same cloud has to be selected in other devices to Sync with windows.
 - Joplin stores note revisions, so accidental changes can be recovered.
 - If you use multiple devices, sync after finishing work on one device before switching.
 
-## Search and Find
-
-### Search notes
-
-- Use the search field at the top of the notes list.
-- Search supports keywords, tags, titles, and full note contents.
-- Use `tag:work` or `notebook:Projects` filters for more precise results.
-
-### Advanced search
-
-- Search operators include `tag:`, `notebook:`, `type:`, and `created:`.
-- Example: `tag:meeting notebook:Work`.
-- This helps when you are tracking notes across many notebooks.
-
-## Import and Export
-
-### Import notes
-
-- Go to **File > Import**.
-- Supported formats include JEX, Markdown, Evernote ENEX, and plain text.
-- Use import when moving notes from another app or restoring backups.
-
-### Export notes
-
-- Select a note or notebook and choose **File > Export**.
-- Export formats include `Markdown`, `PDF`, `HTML`, and `JEX`.
-- Export useful notes for sharing or storing as a backup.
-
 ## Mobile Usage
 
 ### Install and sync mobile
 
 - Install Joplin Mobile from Google Play or the Apple App Store.
 - Open the app and choose **Configuration > Synchronization target**.
-- Use the same sync target as desktop for seamless note access.
+- Use the same sync target as the desktop for seamless note access.
 
 ### Mobile features
 
