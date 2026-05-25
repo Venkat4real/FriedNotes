@@ -9,8 +9,8 @@ description: Keep up with the latest product updates, releases, and feature enha
 > The next scheduled deployment is Tuesday at 09:00 UTC.
 
 ## Auto-generated release notes
+- **[#2](https://github.com/Venkat4real/FriedNotes/pull/2)** - Update User Guide link to Joplin_User_guide.html *by @Venkat4real, merged 2026-05-25.*
 
-- This section receives automated updates from merged PRs and weekly deployment jobs.
 
 ## Release notes 1.1 (Jan 4 – 18)
 
