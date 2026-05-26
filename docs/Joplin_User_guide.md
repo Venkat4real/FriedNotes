@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Joplin User Guide
-description: Learn how to create, organize, and sync notes in Fried Notes.
+description: Learn how to install, create, organize, and sync notes in Joplin.
 ---
 
 # Joplin User Guide
@@ -12,9 +12,9 @@ Joplin is an open-source note-taking and personal knowledge management applicati
 
 ### Install Joplin
 
-- Visit https://joplinapp.org and download the version for Windows.
-- Alternatively, install from the command line for desktop builds or use the portable app when available.
-- For open source development, the repository is available at https://github.com/joplinapp/joplin.
+- Visit https://joplinapp.org and download the latest version for Windows.
+
+> Note: Alternatively, install from the command line for desktop builds or use the portable app when available. For open source development, the repository is available at https://github.com/joplinapp/joplin.
 
 #### Windows installation 
 
@@ -23,14 +23,16 @@ Joplin is an open-source note-taking and personal knowledge management applicati
 
 <img src="./assets/joplin-windows-installer.png" alt="Joplin Windows installer user selection" width="600" />
 
-- After choosing the install Users, click **Install**.
-- When installation completes, click the **Finish** button. Users can also enable the Run Joplin option to launch the app after clicking on the **Finish** button.
+- After choosing the install Users, click the **Install** button.
+- When installation completes, click the **Finish** button. 
+
+> Tip: Users can also enable the Run Joplin option to launch the app after clicking on the **Finish** button.
 
 <img src="./assets/joplin-windows-installer-completed.png" alt="Joplin Windows installer completed" width="600" />
 
 ### Welcome screen (Dashboard)
 
-- When Joplin opens for the first time, you will see a welcome screen with some example notes. Users can refer to those to learn more about Joplin.
+- When Joplin opens for the first time, you will see a welcome screen with some example notes. Users can refer to the information to learn more about Joplin.
 
 <img src="./assets/joplin-windows-installer-welcome-screen.png" alt="Joplin welcome screen" width="600" />
 
@@ -92,7 +94,7 @@ The following screen shows the sync options available in Joplin:
 
 - Select the preferred cloud storage option 
 
-Note: the same cloud has to be selected on other devices to sync with Windows.
+> Note: the same cloud storage method has to be selected on other devices to sync with Windows.
 
 ### Syncing via OneDrive
 
