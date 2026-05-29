@@ -9,6 +9,10 @@ description: Keep up with the latest product updates, releases, and feature enha
 > Every Tuesday, the current week's updates are grouped into a weekly release section.
 
 ## Auto-generated release notes
+- This section receives automated updates
+
+## Release Update - Week of 2026-05-22 to 2026-05-29
+
 - **[#5](https://github.com/Venkat4real/FriedNotes/pull/5)** - Cleanup release notes by removing old module entries *by @Venkat4real, merged 2026-05-29.*
 
 
@@ -16,7 +20,6 @@ description: Keep up with the latest product updates, releases, and feature enha
 
 
 - **[#2](https://github.com/Venkat4real/FriedNotes/pull/2)** - Update User Guide link to Joplin_User_guide.html *by @Venkat4real, merged 2026-05-25.*
-
 
 ## Release notes 1.1 (Jan 4 – 18)
 
@@ -33,4 +36,3 @@ description: Keep up with the latest product updates, releases, and feature enha
 #### Module AB
 
 - Added export functionality for user reports to Excel and PDF. *(Deployed date) **Click here to read more**.*
-
