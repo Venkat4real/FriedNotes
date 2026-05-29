@@ -35,7 +35,9 @@ jobs:
         run: npm install
 
       - name: Build API Documentation
-        run: node convert.js
+        run: |
+          mkdir -p docs
+          node convert.js
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
