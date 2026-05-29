@@ -24,6 +24,9 @@ if (!token) {
 }
 
 function readReleaseNotes() {
+  if (!fs.existsSync(releasePath)) {
+    return '# Release Notes\n\n## Auto-generated release notes\n- This section receives automated updates\n';
+  }
   return fs.readFileSync(releasePath, 'utf8');
 }
 
@@ -49,63 +52,20 @@ function insertIntoAutoSection(content, block) {
 
   const afterMarker = content.indexOf('\n', markerIndex) + 1;
   const before = content.slice(0, afterMarker);
-  let remainder = content.slice(afterMarker);
+  const remainder = content.slice(afterMarker);
 
-  if (remainder.trimStart().startsWith('- This section receives automated updates')) {
-    remainder = remainder.replace(/- This section receives automated updates[\s\S]*?(?=\n## |$)/, '');
+  // If there's a placeholder, remove it
+  const placeholder = '- This section receives automated updates';
+  let cleanRemainder = remainder.trimStart();
+  if (cleanRemainder.startsWith(placeholder)) {
+    cleanRemainder = cleanRemainder.slice(placeholder.length).trimStart();
   }
 
-  return before + block + '\n\n' + remainder.trimStart();
+  return before + block + '\n' + cleanRemainder;
 }
 
 function alreadyContains(content, prNumber) {
   return content.includes(`[#${prNumber}]`) || content.includes(`PR #${prNumber}`);
-}
-
-function apiGet(path) {
-  return new Promise((resolve, reject) => {
-    const options = {
-      hostname: 'api.github.com',
-      path,
-      method: 'GET',
-      headers: {
-        'User-Agent': 'github-actions',
-        Authorization: `token ${token}`,
-        Accept: 'application/vnd.github.v3+json',
-      },
-    };
-
-    const req = https.request(options, (res) => {
-      let body = '';
-      res.on('data', (chunk) => { body += chunk; });
-      res.on('end', () => {
-        if (res.statusCode >= 200 && res.statusCode < 300) {
-          try {
-            resolve(JSON.parse(body));
-          } catch (err) {
-            reject(err);
-          }
-        } else {
-          reject(new Error(`GitHub API request failed: ${res.statusCode} ${res.statusMessage} ${body}`));
-        }
-      });
-    });
-
-    req.on('error', reject);
-    req.end();
-  });
-}
-
-async function fetchMergedPRs() {
-  const now = new Date();
-  const since = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
-  const sinceIso = since.toISOString().slice(0, 10);
-  const untilIso = now.toISOString().slice(0, 10);
-  const query = encodeURIComponent(`repo:${repo} is:pr is:merged merged:${sinceIso}..${untilIso}`);
-  const path = `/search/issues?q=${query}&sort=updated&order=desc&per_page=100`;
-
-  const data = await apiGet(path);
-  return data.items || [];
 }
 
 async function runPrMode() {
@@ -133,8 +93,7 @@ async function runPrMode() {
   }
 
   const entry = formatEntry(pr);
-  const block = entry + '\n';
-  const updated = insertIntoAutoSection(content, block);
+  const updated = insertIntoAutoSection(content, entry);
   writeReleaseNotes(updated);
   console.log(`Added PR #${pr.number} to release notes.`);
 }
@@ -148,35 +107,54 @@ function formatWeekRange() {
 }
 
 async function runWeeklyMode() {
-  const prs = await fetchMergedPRs();
-  if (!prs.length) {
-    console.log('No merged PRs found in the last 7 days. Nothing to update.');
+  const content = readReleaseNotes();
+  const marker = '## Auto-generated release notes';
+  const markerIndex = content.indexOf(marker);
+  
+  if (markerIndex === -1) {
+    console.error('Marker not found.');
     return;
   }
 
-  const content = readReleaseNotes();
-  const entries = prs
-    .filter((pr) => !alreadyContains(content, pr.number))
-    .map(formatEntry);
+  const afterMarker = content.indexOf('\n', markerIndex) + 1;
+  const nextSectionIndex = content.indexOf('\n## ', afterMarker);
+  
+  let autoSectionContent = '';
+  let restContent = '';
+  
+  if (nextSectionIndex === -1) {
+    autoSectionContent = content.slice(afterMarker).trim();
+    restContent = '';
+  } else {
+    autoSectionContent = content.slice(afterMarker, nextSectionIndex).trim();
+    restContent = content.slice(nextSectionIndex).trim();
+  }
 
-  if (!entries.length) {
-    console.log('All recent merged PRs already exist in release notes. Skipping.');
+  const placeholder = '- This section receives automated updates';
+  if (!autoSectionContent || autoSectionContent === placeholder) {
+    console.log('No new PRs in the auto-section. Nothing to rotate.');
     return;
   }
 
   const dateLabel = formatWeekRange();
-  const block = [`### Weekly release note update - ${dateLabel}`, ''];
-  entries.forEach((entry) => block.push(entry));
-
-  const updated = insertIntoAutoSection(content, block.join('\n') + '\n');
+  const newSection = `## Release Update - ${dateLabel}\n\n${autoSectionContent}\n\n`;
+  const resetAutoSection = `${marker}\n- This section receives automated updates\n\n`;
+  
+  const updated = content.slice(0, markerIndex) + resetAutoSection + newSection + restContent;
   writeReleaseNotes(updated);
-  console.log(`Added ${entries.length} weekly release note entries.`);
+  console.log('Rotated auto-generated notes into a new weekly section.');
 }
 
 (async () => {
-  if (mode === 'pr') {
-    await runPrMode();
-  } else {
-    await runWeeklyMode();
+  try {
+    if (mode === 'pr') {
+      await runPrMode();
+    } else {
+      await runWeeklyMode();
+    }
+  } catch (err) {
+    console.error(err);
+    process.exit(1);
   }
 })();
+

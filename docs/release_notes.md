@@ -5,8 +5,8 @@ description: Keep up with the latest product updates, releases, and feature enha
 ---
 
 > This release notes file is automatically updated by GitHub Actions.
-> New PRs merged into the repository are added instantly, and full deployment runs every Tuesday.
-> The next scheduled deployment is Tuesday at 09:00 UTC.
+> The site is deployed immediately upon PR merge, ensuring documentation stays in sync with code.
+> Every Tuesday, the current week's updates are grouped into a weekly release section.
 
 ## Auto-generated release notes
 - **[#5](https://github.com/Venkat4real/FriedNotes/pull/5)** - Cleanup release notes by removing old module entries *by @Venkat4real, merged 2026-05-29.*
