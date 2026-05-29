@@ -4,10 +4,11 @@ on:
   schedule:
     - cron: '0 9 * * 2' # Every Tuesday at 09:00 UTC
   pull_request: 
-   types: [closed]
-   branches: 
+    types: [closed]
+    branches: 
       - main
   workflow_dispatch: # Allows you to trigger it manually right now!
+
 permissions:
   contents: write
   pull-requests: read
@@ -27,8 +28,9 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Update release notes for merged PR
-        if: github.event_name == 'pull_request_target' && github.event.action == 'closed' && github.event.pull_request.merged == true
+      - name: Update release notes for merged PR or manual trigger
+        # FIXED: Added support for workflow_dispatch and updated pull_request event check
+        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
