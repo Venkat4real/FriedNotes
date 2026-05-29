@@ -1,11 +1,13 @@
 name: Docs release notes automation
 
 on:
-  pull_request_target:
-    types: [closed]
   schedule:
     - cron: '0 9 * * 2' # Every Tuesday at 09:00 UTC
-
+  pull_request: 
+   types: [closed]
+   branches: 
+      - main
+  workflow_dispatch: # Allows you to trigger it manually right now!
 permissions:
   contents: write
   pull-requests: read
