@@ -39,7 +39,7 @@ Here is a breakdown of the technical writing samples included in this repository
 
 I follow a disciplined daily routine to keep this repository sharp and relevant:
 1.  **Grammar & Mechanics:** Continuous refinement of tone, clarity, and style.
-2.  **Code & Sample Updates:** Regular pushes to ensure all code snippets and API definitions are functional and up to date.
+2.  **Sample Updates:** Regular pushes to ensure all samples are up to date.
 3.  **Open Source Contributions:** Applying these documentation standards to wider community projects wherever possible.
 
 ---
@@ -48,8 +48,7 @@ I follow a disciplined daily routine to keep this repository sharp and relevant:
 
 If you are looking for a technical writer who speaks fluent developer, let's connect!
 
-* **GitHub:** [@your-username](https://github.com/your-username)
-* **LinkedIn:** [Your Name](https://linkedin.com/in/your-profile)
+* **Email:** maragonivenkatsai@gmail.com 
 
 
   
