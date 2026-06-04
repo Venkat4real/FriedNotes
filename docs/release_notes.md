@@ -9,8 +9,7 @@ description: Keep up with the latest product updates, releases, and feature enha
 > Every Tuesday, the current week's updates are grouped into a weekly release section.
 
 ## Auto-generated release notes
-- This section receives automated updates
-
+- **[#11](https://github.com/Venkat4real/FriedNotes/pull/11)** - Enhance technical writing resources list *by @Venkat4real, merged 2026-06-04.*
 ## Release Update - Week of 2026-05-26 to 2026-06-02
 
 - **[#10](https://github.com/Venkat4real/FriedNotes/pull/10)** - Add Joplin User Guide link to documentation *by @Venkat4real, merged 2026-06-02.*
