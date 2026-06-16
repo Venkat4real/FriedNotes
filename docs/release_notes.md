@@ -9,7 +9,12 @@ description: Keep up with the latest product updates, releases, and feature enha
 > Every Tuesday, the current week's updates are grouped into a weekly release section.
 
 ## Auto-generated release notes
+- This section receives automated updates
+
+## Release Update - Week of 2026-06-09 to 2026-06-16
+
 - **[#12](https://github.com/Venkat4real/FriedNotes/pull/12)** - Add link to technical writing resources in index.html *by @Venkat4real, merged 2026-06-10.*
+
 ## Release Update - Week of 2026-06-02 to 2026-06-09
 
 - **[#11](https://github.com/Venkat4real/FriedNotes/pull/11)** - Enhance technical writing resources list *by @Venkat4real, merged 2026-06-04.*
