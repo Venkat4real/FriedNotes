@@ -9,6 +9,7 @@ description: Keep up with the latest product updates, releases, and feature enha
 > Every Tuesday, the current week's updates are grouped into a weekly release section.
 
 ## Auto-generated release notes
+- **[#15](https://github.com/Venkat4real/FriedNotes/pull/15)** - Enhance code block styles in docs *by @Venkat4real, merged 2026-07-01.*
 - **[#14](https://github.com/Venkat4real/FriedNotes/pull/14)** - Revise layout and update last modified date *by @Venkat4real, merged 2026-07-01.*
 ## Release Update - Week of 2026-06-09 to 2026-06-16
 
