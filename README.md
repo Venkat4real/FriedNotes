@@ -13,19 +13,7 @@ This repository is built and maintained using an **AI-native development workflo
 
 This hybrid approach ensures that the documentation is not only precise but also follows modern, agile development practices.
 
----
 
-## 📂 Repository Structure & Samples
-
-Here is a breakdown of the technical writing samples included in this repository:
-
-| Directory / Project | Description | Tech Stack / Tools |
-| :--- | :--- | :--- |
-| `📂 /api-reference` | Interactive API documentation samples, including endpoints, authentication, and error handling. | Postman, OpenAPI, Redoc |
-| `📂 /tutorials-guides` | Step-by-step developer guides, onboarding tutorials, and system architecture explanations. | Markdown, Hugo/Docusaurus |
-| `📂 /code-snippets` | Documented, production-ready code examples used within the guides. | JSON, Python, Shell |
-
----
 
 ## 🚀 Key Focus Areas
 
