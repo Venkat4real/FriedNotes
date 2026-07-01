@@ -1,4 +1,11 @@
-# 🧜‍♀️ Mermaid Diagrams in GitHub Pages — User Guide
+---
+layout: docs
+title: Mermaid Diagrams in GitHub Pages — User Guide
+description: A comprehensive guide to using Mermaid diagrams in your GitHub Pages portfolio site.
+---
+
+
+# Mermaid Diagrams in GitHub Pages — User Guide
 
 > A comprehensive guide to using Mermaid diagrams in your GitHub Pages portfolio site.
 
@@ -707,12 +714,12 @@ await mermaid.run({ nodes: [diagramDiv] });
 
 ## Additional Resources
 
-- 📖 [Mermaid Official Documentation](https://mermaid.js.org/intro/)
-- 🎮 [Mermaid Live Editor](https://mermaid.live/)
-- 🐙 [Mermaid GitHub Repository](https://github.com/mermaid-js/mermaid)
-- 📚 [GitHub Pages Documentation](https://docs.github.com/en/pages)
-- 🎨 [Mermaid Theme Configuration](https://mermaid.js.org/config/theming.html)
+- [Mermaid Official Documentation](https://mermaid.js.org/intro/)
+- [Mermaid Live Editor](https://mermaid.live/)
+- [Mermaid GitHub Repository](https://github.com/mermaid-js/mermaid)
+- [GitHub Pages Documentation](https://docs.github.com/en/pages)
+- [Mermaid Theme Configuration](https://mermaid.js.org/config/theming.html)
 
 ---
 
-*Last updated: June 2026*
+*Last updated: July 2026*
