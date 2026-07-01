@@ -5,12 +5,6 @@ description: A comprehensive guide to using Mermaid diagrams in your GitHub Page
 ---
 
 
-# Mermaid Diagrams in GitHub Pages — User Guide
-
-> A comprehensive guide to using Mermaid diagrams in your GitHub Pages portfolio site.
-
----
-
 ## Table of Contents
 
 1. [What is Mermaid?](#what-is-mermaid)
