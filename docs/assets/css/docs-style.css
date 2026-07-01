@@ -178,6 +178,12 @@ a:hover {
   overflow-x: auto;
 }
 
+.docs-content pre code {
+  color: inherit;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+
 .docs-content code {
   color: #d946ef;
   background: #f8fafc;
