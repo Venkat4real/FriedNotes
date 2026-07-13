@@ -1,3 +1,10 @@
+---
+layout: docs
+title: Technical writing resources
+description: Collection of resources in the field of technical writing around the world 
+---
+
+ 
  ### Collection of resources in the field of technical writing around the world 
  
  * [Automate the technical writing] (https://tinyrocket.dev/learn)
