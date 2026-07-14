@@ -16,3 +16,7 @@ description: Collection of resources in the field of technical writing around th
 ## Learning from the best
 - [Atlasian release notes](https://community.atlassian.com/release-notes)
 - [Claude Docs](https://support.claude.com/en/)
+
+## Documentation Tools
+- [Scribe](https://scribe.com/): This tool automates the process documentation.(step by step process)
+- [Tango](https://www.tango.ai/): This tool automates the process documentation. Additionally, iteractive guides can be created with Tango.
