@@ -9,6 +9,10 @@ description: Keep up with the latest product updates, releases, and feature enha
 > Every Tuesday, the current week's updates are grouped into a weekly release section.
 
 ## Auto-generated release notes
+- This section receives automated updates
+
+## Release Update - Week of 2026-07-07 to 2026-07-14
+
 - This section receives automated updates. This section will display only the changes that are added through the PR. If the changes are added to the main branch without PR. The changes will not be recorded. Click here to learn more about the workflow and configure the workflow.
 
 ## Release Update - Week of 2026-06-30 to 2026-07-07
