@@ -10,3 +10,4 @@ theme: minima # You can choose a different Jekyll theme here
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-last-modified-at
