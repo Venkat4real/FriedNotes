@@ -6,17 +6,20 @@ description: This page will list the AI and Automations projects.
 ## GitHub Actions Workflow: Release Notes Automation
 
 The source file for the automated release notes is in path:
-Repo -> .github -> workflows -> release-notes-cycle.yml
+Repo → .github → workflows → release-notes-cycle.yml
 
 This workflow automatically updates repository's release notes file. It coordinates with the Node.js script.
-Triggers
+
+### Triggers
+
 The workflow runs in three scenarios:
 
 - PR Merge — When a pull request is merged to main
-- Weekly Schedule — Every Tuesday at 9:00 AM UTC (via cron 0 9 * * 2)
+- Weekly Schedule — Every Tuesday at 9:00 AM UTC
 - Manual Trigger — Via workflow_dispatch (run it manually from the Actions tab)
 
 What It Does
+
 Step 1: Checkout Code
 Clones the repo at the main branch with full history
 
