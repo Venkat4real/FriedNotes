@@ -9,8 +9,7 @@ description: Keep up with the latest product updates, releases, and feature enha
 > Every Tuesday, the current week's updates are grouped into a weekly release section.
 
 ## Auto-generated release notes
-- This section receives automated updates
-
+- **[#16](https://github.com/Venkat4real/Documentation-Portfolio/pull/16)** - Added article about automated release notes *by @Venkat4real, merged 2026-07-15.*
 ## Release Update - Week of 2026-07-07 to 2026-07-14
 
 - This section receives automated updates. This section will display only the changes that are added through the PR. If the changes are added to the main branch without PR. The changes will not be recorded. Click here to learn more about the workflow and configure the workflow.
