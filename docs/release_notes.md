@@ -8,6 +8,9 @@ description: Keep up with the latest product updates, releases, and feature enha
 > The site is deployed immediately upon PR merge, ensuring documentation stays in sync with code.
 > Every Tuesday, the current week's updates are grouped into a weekly release section.
 
+> [!NOTE]
+> The changes deployed to Repo without a PR merge will not be recorded in the Automated Release Notes.
+
 ## Auto-generated release notes
 - This section receives automated updates
 
