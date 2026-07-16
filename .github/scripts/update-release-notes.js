@@ -40,7 +40,17 @@ function formatEntry(pr) {
   const url = pr.html_url || `https://github.com/${repo}/pull/${number}`;
   const author = pr.user?.login || 'unknown';
   const mergedAt = pr.merged_at ? pr.merged_at.slice(0, 10) : (pr.closed_at ? pr.closed_at.slice(0, 10) : new Date().toISOString().slice(0, 10));
-  return `- **[#${number}](${url})** - ${title} *by @${author}, merged ${mergedAt}.*`;
+  
+  // Extract article link from PR body
+  let articleLink = '';
+  if (pr.body) {
+    const linkMatch = pr.body.match(/Article:\s*\[.*?\]\((.*?)\)/i);
+    if (linkMatch && linkMatch[1]) {
+      articleLink = ` - [View Article](${linkMatch[1]})`;
+    }
+  }
+  
+  return `- **[#${number}](${url})** - ${title} *by @${author}, merged ${mergedAt}.*${articleLink}`;
 }
 
 function insertIntoAutoSection(content, block) {
