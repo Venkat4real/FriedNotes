@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: errata-ai/vale-action@v2.3.1
+      - uses: errata-ai/vale-action@v2.1.2
         with:
           files: 'src,docs'
           fail-on-error: true
