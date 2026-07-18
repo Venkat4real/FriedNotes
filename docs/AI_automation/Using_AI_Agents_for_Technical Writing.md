@@ -4,13 +4,13 @@ title: API Setup and Automation Guide
 description: A guide for building and automating API documentation in the Fried Notes project.
 ---
 
-# Using AI Agents for Technical Writing: A Practical Guide
+# Using AI agents for technical writing: a practical guide
 
-> A working guide for technical writers on integrating AI agents into the documentation lifecycle — from research and drafting to review, localization, and maintenance.
+> A working guide for technical writers on integrating AI agents into the documentation lifecycle—from research and drafting to review, localization, and maintenance.
 
 ---
 
-## Table of Contents
+## Table of contents
 
 - [Why This Guide Exists](#why-this-guide-exists)
 - [What "AI Agents" Means in a Docs Context](#what-ai-agents-means-in-a-docs-context)
@@ -26,7 +26,7 @@ description: A guide for building and automating API documentation in the Fried 
 
 ---
 
-## Why This Guide Exists
+## Why this guide exists
 
 Technical writers are increasingly expected to produce more content, in more formats, faster — without sacrificing accuracy. AI agents (LLM-based assistants that can read source material, generate drafts, and in some cases take multi-step actions) can absorb a meaningful share of the repetitive work, freeing writers to focus on structure, accuracy, and information architecture — the parts of the job that still require human judgment.
 

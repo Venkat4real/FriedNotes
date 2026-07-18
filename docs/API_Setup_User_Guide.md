@@ -22,7 +22,7 @@ This guide provides an overview of the API documentation setup for the **FriedNo
 ---
 
 ## Overview
-The goal was to create a modern, searchable API documentation page by using [Redoc](https://github.com/Redocly/redoc). Because the project uses a Postman `collection.json` file, we implemented an automated conversion process to generate a standard OpenAPI (Swagger) YAML file, which Redoc requires to render the documentation.
+The goal is to create a modern, searchable API documentation page by using [Redoc](https://github.com/Redocly/redoc). Because the project uses a Postman `collection.json` file, the project includes an automated conversion process that generates a standard OpenAPI (Swagger) YAML file, which Redoc requires to render the documentation.
 
 ## Prerequisites
 To update or manage the API documentation, ensure the following are installed on your system:
@@ -55,7 +55,7 @@ Whenever you update the `collection.json` file, follow these steps to refresh th
 
 ## Code reference
 
-### API reference HTML
+### API reference HTML file
 **File:** `docs/api_reference.html`
 This file uses the Redoc standalone bundle to render the documentation.
 

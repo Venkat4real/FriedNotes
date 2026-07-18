@@ -4,7 +4,7 @@ title: Open Source Contributions
 description: Explore contributions and community work around Fried Notes.
 ---
 
-Some of the contributions I have made:
+Selected contributions include:
 
 - [Fixed a typo in a tutorial](https://quantum.cloud.ibm.com/learning/en/courses/quantum-machine-learning/introduction#check-in-questions), [PR link](https://github.com/Qiskit/documentation/pull/4564)
 - [Fixed table alignment for a tutorial](https://quantum.cloud.ibm.com/learning/en/courses/quantum-diagonalization-algorithms/sqd-overview#5-sqd-vs-vqe), [PR link](https://github.com/Qiskit/documentation/issues/4523)

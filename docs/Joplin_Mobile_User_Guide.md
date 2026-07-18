@@ -4,13 +4,13 @@ title: Mobile User Guide
 description: Step-by-step instructions for using the mobile version of Fried Notes.
 ---
 
-# Joplin Mobile User Guide
+# Joplin mobile user guide
 
 ## Introduction
 
-This guide covers the Joplin mobile app for Android and iOS. It explains how to install the app, set up synchronization, create and organize notes, use attachments, and work offline on the go.
+This guide covers the Joplin mobile app for Android and iOS. It explains how to install the app, set up synchronization, create and organize notes, use attachments, and work offline while traveling.
 
-## Install Joplin Mobile
+## Install Joplin mobile
 
 ### Android
 
@@ -18,7 +18,7 @@ This guide covers the Joplin mobile app for Android and iOS. It explains how to 
 - Search for **Joplin**.
 - Install the app by tapping **Install**.
 
-### iOS
+### iOS devices
 
 - Open the App Store.
 - Search for **Joplin**.
@@ -26,7 +26,7 @@ This guide covers the Joplin mobile app for Android and iOS. It explains how to 
 
 > Note: The Joplin mobile app is free and open source. For development details, see https://github.com/joplinapp/joplin.
 
-## First Launch and Setup
+## First launch and setup
 
 - Open the Joplin mobile app.
 - Choose whether to use the app in offline mode or configure synchronization immediately.
@@ -41,7 +41,7 @@ This guide covers the Joplin mobile app for Android and iOS. It explains how to 
 
 > Tip: Use the same sync target on desktop and mobile so your notes stay consistent.
 
-## Notes and Organization
+## Notes and organization
 
 ### Create a new note
 
@@ -60,7 +60,7 @@ This guide covers the Joplin mobile app for Android and iOS. It explains how to 
 - Add tags from the note sidebar or editor options.
 - Tap a tag to filter notes that use it.
 
-## Editing Notes
+## Editing notes
 
 ### Markdown and WYSIWYG
 
@@ -80,7 +80,7 @@ This guide covers the Joplin mobile app for Android and iOS. It explains how to 
 - Tap a checkbox to mark a task complete.
 - Checklists are ideal for shopping lists, meeting actions, or quick reminders.
 
-## Search and Navigation
+## Search and navigation
 
 ### Search notes
 
@@ -93,13 +93,13 @@ This guide covers the Joplin mobile app for Android and iOS. It explains how to 
 - Pin notes or use favorites if the mobile app interface supports them.
 - Use swipe actions to quickly archive or delete notes.
 
-## Offline Use
+## Offline use
 
 - Joplin mobile works offline by default.
 - Notes created offline are saved locally and synced when you reconnect.
 - Be sure to sync after reconnecting to avoid losing updates between devices.
 
-## Import and Export
+## Import and export
 
 ### Import notes
 
@@ -111,22 +111,22 @@ This guide covers the Joplin mobile app for Android and iOS. It explains how to 
 - Sync your notes regularly to a cloud service.
 - Use the desktop app to export full backups if needed.
 
-## Tips for Mobile Productivity
+## Tips for mobile productivity
 
 - Use voice-to-text or the mobile keyboard for quick note capture.
 - Create a daily journal note or quick memo notebook for rapid capture.
 - Use tags to categorize notes for easy retrieval.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
-Q: Can I use Joplin mobile without sync?
+**Can a user use Joplin mobile without sync?**
 
-A: Yes. Joplin mobile works offline and saves notes locally. Sync is optional but recommended for multi-device access.
+Yes. Joplin mobile works offline and saves notes locally. Sync is optional but recommended for multi-device access.
 
-Q: Can I view attachments on mobile?
+**Can users view attachments on mobile?**
 
-A: Yes. Images, PDFs, and other attached files can be opened directly from the note.
+Yes. Images, PDF files, and other attached files can be opened directly from the note.
 
-Q: Does Joplin mobile support encryption?
+**Does Joplin mobile support encryption?**
 
-A: Yes. Enable end-to-end encryption in the app settings when using sync to secure notes and attachments.
+Yes. Enable end-to-end encryption in the app settings when using sync to secure notes and attachments.
