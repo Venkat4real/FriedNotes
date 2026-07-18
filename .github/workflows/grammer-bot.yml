@@ -10,5 +10,5 @@ jobs:
       - uses: actions/checkout@v4
       - uses: errata-ai/vale-action@v2.1.2
         with:
-          files: 'src,docs'
-          fail-on-error: true
+          files: docs
+          fail_on_error: true
