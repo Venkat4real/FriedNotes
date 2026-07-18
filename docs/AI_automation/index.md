@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: index for AI and Automation
-description: This page will list the AI and Automations projects.
+title: AI and Automation Index
+description: This page lists AI and automation projects.
 ---
 
 <div class="page-category">AI</div>

@@ -8,7 +8,7 @@ description: Learn how to install, create, organize, and sync notes in Joplin.
 
 ## Introduction
 
-Joplin is an open-source note-taking and personal knowledge management application. This guide covers the most important workflows for using Joplin on desktop and mobile, including installation on Windows, adding a new note, saving the notes on the cloud, syncing, installation on mobile (Android), and viewing the online notes.
+Joplin is an open-source note-taking and personal knowledge management application. This guide covers the most important desktop and mobile workflows, including installation on Windows and Android, creating notes, saving notes to the cloud, syncing, and viewing notes online.
 
 ### Install Joplin
 
@@ -23,7 +23,7 @@ Joplin is an open-source note-taking and personal knowledge management applicati
 
 <img src="./assets/joplin-windows-installer.png" alt="Joplin Windows installer user selection" width="600" />
 
-- After choosing the install Users, click the **Install** button.
+- After choosing the installation option, click the **Install** button.
 - When installation completes, click the **Finish** button. 
 
 > Tip: Users can also enable the Run Joplin option to launch the app after clicking on the **Finish** button.
@@ -42,7 +42,7 @@ Joplin is an open-source note-taking and personal knowledge management applicati
 2. In the left sidebar, click the **New note** icon.
 <img src="./assets/joplin-windows-installer-Adding-new-note.png" alt="Joplin welcome screen" width="600" />
 
-5. Enter the notes. The preview of the notes will be displayed on the right side.
+3. Enter your note. Its preview appears on the right side.
 
 <img src="./assets/joplin-windows-installer-Added-new-note.png" alt="Joplin welcome screen" width="600" />
 
@@ -86,15 +86,15 @@ Joplin uses Markdown for formatting notes. Common syntax includes:
 
 The following screen shows the sync options available in Joplin:
 
-- **Joplin Cloud**: the native, fully integrated sync service optimized for notes and Joplin-specific features. Click ([here](https://joplinapp.org/plans/)) to learn more about Joplin Cloud.
+- **Joplin Cloud**: The native, fully integrated sync service optimized for notes and Joplin-specific features. Click [here](https://joplinapp.org/plans/) to learn more about Joplin Cloud.
 - **Dropbox**: a general cloud storage provider that syncs your Joplin note files across devices.
 - **OneDrive**: Microsoft’s cloud storage service, also used to sync Joplin note files between devices.
 
 <img src="./assets/joplin-windows-installer-saving-new-note.png" alt="Joplin sync options screen" width="600" />
 
-- Select the preferred cloud storage option 
+- Select your preferred cloud storage option.
 
-> Note: the same cloud storage method has to be selected on other devices to sync with Windows.
+> Note: Select the same cloud storage method on your other devices to sync with Windows.
 
 ### Syncing via OneDrive
 
@@ -109,7 +109,7 @@ The following screen shows the sync options available in Joplin:
 
 <img src="./assets/joplin-windows-Onedrive-sync-success.png" alt="OneDrive sync success confirmation" width="600" />
 
-5. The following success text will be displayed.
+5. A success message appears.
 
 <img src="./assets/joplin-windows-Onedrive-sync-success2.png" alt="OneDrive sync success confirmation" width="600" />
 

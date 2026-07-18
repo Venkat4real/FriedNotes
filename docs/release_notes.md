@@ -13,7 +13,7 @@ description: Keep up with the latest product updates, releases, and feature enha
 
 ## Release Update - Week of 2026-07-07 to 2026-07-14
 
-- This section receives automated updates. The bot collects all the changes made through out the week,and stores them here.
+- This section receives automated updates. The bot collects all changes made throughout the week and stores them here.
 
 ## Release Update - Week of 2026-06-30 to 2026-07-07
 
@@ -47,11 +47,11 @@ description: Keep up with the latest product updates, releases, and feature enha
 
 #### Module XY
 
-- New filter is added to the product screen to filter the records by date. *(Deployed date) **Click here to read more**.*
+- Added a new filter to the product screen that filters records by date. *(Deployed date) **Click here to read more**.*
 
 ##### Module ZY
 
-- Guide on New implementation is published. *(Deployed date) **Click here to read more**.*
+- A guide to the new implementation is published. *(Deployed date) **Click here to read more**.*
 
 ## Release notes 1.2 (Feb 1 – 14)
 

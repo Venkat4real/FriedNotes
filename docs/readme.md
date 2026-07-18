@@ -1,3 +1,3 @@
-This folder is the main directory for the website. 
-The folder contains the index file, the files for all the pages. 
-The CSS file is in the assets folder. 
+This folder is the main directory for the website.
+It contains the index file and files for all pages.
+The CSS file is in the assets folder.

@@ -4,9 +4,9 @@ title: API Setup and Automation Guide
 description: A guide for building and automating API documentation in the Fried Notes project.
 ---
 
-# API documentation set up and automation guide
+# API documentation setup and automation guide
 
-This guide provides an overview of the API documentation set up for the **FriedNotes** project. It includes the steps to implement a Redoc-based API reference, convert Postman collections to OpenAPI, and automate future updates.
+This guide provides an overview of the API documentation setup for the **FriedNotes** project. It includes the steps to implement a Redoc-based API reference, convert Postman collections to OpenAPI, and automate future updates.
 
 ## Table of contents
 1. [Overview](#overview)
