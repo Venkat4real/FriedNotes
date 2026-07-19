@@ -4,9 +4,9 @@ title: API Setup and Automation Guide
 description: A guide for building and automating API documentation in the Fried Notes project.
 ---
 
-# API documentation set up and automation guide
+# API documentation setup and automation guide
 
-This guide provides an overview of the API documentation set up for the **FriedNotes** project. It includes the steps to implement a Redoc-based API reference, convert Postman collections to OpenAPI, and automate future updates.
+This guide provides an overview of the API documentation setup for the **FriedNotes** project. It includes the steps to implement a Redoc-based API reference, convert Postman collections to OpenAPI, and automate future updates.
 
 ## Table of contents
 1. [Overview](#overview)
@@ -22,7 +22,7 @@ This guide provides an overview of the API documentation set up for the **FriedN
 ---
 
 ## Overview
-The goal was to create a modern, searchable API documentation page by using [Redoc](https://github.com/Redocly/redoc). Because the project uses a Postman `collection.json` file, we implemented an automated conversion process to generate a standard OpenAPI (Swagger) YAML file, which Redoc requires to render the documentation.
+The goal is to create a modern, searchable API documentation page by using [Redoc](https://github.com/Redocly/redoc). Because the project uses a Postman `collection.json` file, the project includes an automated conversion process that generates a standard OpenAPI (Swagger) YAML file, which Redoc requires to render the documentation.
 
 ## Prerequisites
 To update or manage the API documentation, ensure the following are installed on your system:
@@ -55,7 +55,7 @@ Whenever you update the `collection.json` file, follow these steps to refresh th
 
 ## Code reference
 
-### API reference HTML
+### API reference HTML file
 **File:** `docs/api_reference.html`
 This file uses the Redoc standalone bundle to render the documentation.
 

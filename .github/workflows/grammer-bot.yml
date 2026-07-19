@@ -1,0 +1,14 @@
+name: Grammar Check
+on:
+  pull_request:
+    types: [opened, synchronize, edited]
+
+jobs:
+  vale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: errata-ai/vale-action@v2.1.2
+        with:
+          files: docs
+          fail_on_error: true

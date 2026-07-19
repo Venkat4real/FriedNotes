@@ -1,55 +1,63 @@
 ---
 layout: docs
-title: GitHub Actions Workflow
-description: This page will list theG itHub Action Workflows.
+title: GitHub Actions workflow
+description: This page describes the GitHub Actions release notes workflow.
 ---
-## GitHub Actions Workflow: Release Notes Automation
 
-The source file for the automated release notes is in path:
+## GitHub Actions workflow: release notes automation
 
-#### YML file
+The source files for automated release notes are located at:
 
-Repo → .github → workflows → release-notes-cycle.yml
+#### YAML file
 
-#### Java Script
+Repository > .github > workflows > release-notes-cycle.yml
 
-Repo → .github → scripts → update-release-notes.js
+#### JavaScript file
 
+Repository > .github > scripts > update-release-notes.js
 
+This workflow automatically updates the repository's release notes file. It coordinates with the Node.js script.
 
 ### Triggers
 
 The workflow runs in three scenarios:
 
-- PR Merge — When a pull request is merged to main
+- PR merge—when a pull request is merged to main.
+- Weekly schedule—every Tuesday at 9:00 AM UTC.
+- Manual trigger—via the manual workflow dispatch event from the Actions tab.
 
-Reads the GitHub event payload to extract PR details (number, title, author, merge date)
-Formats the PR as a markdown entry with a link
-Inserts it into the "Auto-generated release notes" section
-Skips duplicates
+## What it does
 
-The commit message will be displayed in the release notes, witht the (number, title, author, merge date).
+### Step 1: Check out code
 
-![Automated Release notes daily](image.png)
+Clones the repository's main branch with full history.
 
+### Step 2: Set up Node.js
 
-- Weekly Schedule — Every Tuesday at 9:00 AM UTC
+Installs Node.js v24 and enables npm caching for faster builds.
 
-Collects all PRs accumulated in the auto-section over the past week
-Archives them into a dated section like "Release Update - Week of 2024-01-15 to 2024-01-22"
-Resets the auto-section back to empty
+### Step 3: Run the update script
 
-![Weekyl automated release notes](image-1.png)
+If a PR is merged, the workflow runs in PR mode and adds the PR to the release notes. If scheduled or manually triggered, it runs in weekly mode, archives the week's PRs in a dated section, and resets the auto section.
 
-- Manual Trigger — Via workflow_dispatch (run it manually from the Actions tab)
+### Step 4: Commit and push
 
-Additionally, Users can manually tigger the automation from the Github. This screen can be accessed from the path:
-Reposistory -> Actions -> All Work flows -> Release Notes Cycle -> Run Workflow
+Configures Git as the GitHub Actions bot, stages the updated `docs/release_notes.md`, commits the changes, and pushes them to main. The workflow silently skips this step when no changes occur.
+
+## The flow
+
+PR merged > workflow triggers > adds entry to auto section > commits and pushes
+
+Tuesday 9 AM > weekly mode triggers > rotates auto section into dated entry > commits and pushes
+
+The workflow collects all PRs accumulated in the auto section over the past week, archives them in a dated section such as "Release update—week of 2024-01-15 to 2024-01-22," and resets the auto section.
+
+![Weekly automated release notes](image-1.png)
+
+### Run the workflow manually
+
+Users can manually trigger the automation from GitHub. Access this screen from the following path:
+
+Repository > Actions > All workflows > Release Notes Cycle > Run workflow
+
 ![Manual trigger](image-2.png)
-
-
-The Flow
-
-PR Merged → workflow triggers → adds entry to auto-section → commits & pushes
-
-Tuesday 9 AM → weekly mode triggers → rotates auto-section into dated entry → commits & pushes

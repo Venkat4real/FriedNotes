@@ -1,11 +1,11 @@
 ---
 layout: docs
-title: index for AI and Automation
-description: This page will list the AI and Automations projects.
+title: AI and Automation Index
+description: This page lists AI and automation projects.
 ---
 
 <div class="page-category">AI</div>
-<h1>AI and Automation Guides for Technical Writing</h1>
+<h1>AI and automation guides for technical writing</h1>
 <p class="page-description">A three-part series on using AI agents and local LLMs across the documentation lifecycle.</p>
 
 ## Guides

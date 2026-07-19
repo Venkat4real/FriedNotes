@@ -38,5 +38,18 @@ If you are looking for a technical writer who speaks fluent developer, let's con
 
 * **Email:** maragonivenkatsai@gmail.com 
 
+# How to run this repository
+
+Run the following commands:
+
+```sh
+cd docs
+jekyll serve
+```
+
+Open http://localhost:3000 in a web browser.
+
+The following screen is displayed:
+![local repo](image.png)
 
   

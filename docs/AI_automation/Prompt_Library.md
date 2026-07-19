@@ -3,13 +3,13 @@ layout: docs
 title: API Setup and Automation Guide
 description: A guide for building and automating API documentation in the Fried Notes project.
 ---
-# Prompt Library for Technical Writers: A DDLC-Based Approach
+# Prompt library for technical writers: a DDLC-based approach
 
 > A companion article to [Using AI Agents for Technical Writing](./ai-agents-for-technical-writers.md), providing ready-to-use prompts mapped to each stage of the Documentation Development Life Cycle (DDLC).
 
 ---
 
-## Table of Contents
+## Table of contents
 
 - [Why Map Prompts to the DDLC](#why-map-prompts-to-the-ddlc)
 - [The DDLC at a Glance](#the-ddlc-at-a-glance)
@@ -24,15 +24,15 @@ description: A guide for building and automating API documentation in the Fried 
 
 ---
 
-## Why Map Prompts to the DDLC
+## Why map prompts to the DDLC
 
-Most prompting advice treats AI as a single-purpose drafting tool. In practice, the highest-leverage use of AI in documentation work comes from switching its **role** at each stage of the lifecycle — sometimes it's the drafter, sometimes it's an adversarial reviewer, sometimes it's a stand-in for a persona you don't have easy access to (like a QA engineer or business analyst).
+Most prompting advice treats AI as a single-purpose drafting tool. In practice, the highest-leverage use of AI in documentation work comes from switching its **role** at each stage of the lifecycle—sometimes it's the drafter, sometimes it's an adversarial reviewer, sometimes it's a stand-in for a persona you don't have easy access to (like a QA engineer or business analyst).
 
-Treating each DDLC stage as a distinct prompt — with its own role, inputs, and constraints — produces far more reliable output than one long, multi-purpose prompt.
+Treating each DDLC stage as a distinct prompt—with its own role, inputs, and constraints—produces far more reliable output than one long, multi-purpose prompt.
 
 ---
 
-## The DDLC at a Glance
+## The DDLC at a glance
 
 ```
 Plan → Draft → Self-Review → QA/BA Review → Technical/Peer Review → Publish → Maintain
@@ -47,11 +47,11 @@ Each stage below includes:
 
 ---
 
-## Stage 1: Planning & Research
+## Stage 1: Planning and research
 
-**Purpose:** Turn a rough brief, ticket, or source artifact into a scoped outline before any prose is written.
+**Purpose:** turn a rough brief, ticket, or source artifact into a scoped outline before any prose is written.
 
-**AI's role:** Research assistant / information architect.
+**AI's role:** research assistant / information architect.
 
 **Example prompt:**
 ```
@@ -68,15 +68,15 @@ Source material:
 [paste API spec / diff / ticket]
 ```
 
-**What to watch for:** Verify the proposed topic type actually matches your audience's need — AI tends to default to "task" topics even when a concept explanation is what's missing.
+**What to watch for:** verify the proposed topic type actually matches your audience's need—AI tends to default to "task" topics even when a concept explanation is what's missing.
 
 ---
 
 ## Stage 2: Drafting
 
-**Purpose:** Generate a first-pass draft from an approved outline and verified source material.
+**Purpose:** generate a first-pass draft from an approved outline and verified source material.
 
-**AI's role:** Drafting assistant, writing in your house style.
+**AI's role:** drafting assistant, writing in your house style.
 
 **Example prompt:**
 ```
@@ -104,15 +104,15 @@ Glossary:
 [paste terminology list]
 ```
 
-**What to watch for:** Scan for any `[NEEDS INPUT: ...]` markers before moving on — don't let the next stage's reviewer waste a pass catching something the drafter already flagged as missing.
+**What to watch for:** scan for any `[NEEDS INPUT: ...]` markers before moving on—don't let the next stage's reviewer waste a pass catching something the drafter already flagged as missing.
 
 ---
 
-## Stage 3: Self-Review
+## Stage 3: Self-review
 
 **Purpose:** Have the AI critique its own (or your own) draft before it goes to a human reviewer, catching the cheap, mechanical issues so human review time is spent on substance.
 
-**AI's role:** Your own harshest editor — style and structure only, not a technical authority.
+**AI's role:** your own harshest editor—style and structure only, not a technical authority.
 
 **Example prompt:**
 ```
@@ -138,15 +138,15 @@ Glossary:
 [paste terminology list]
 ```
 
-**What to watch for:** This stage is deliberately scoped to style/structure, not technical accuracy — an AI reviewing its own technical claims tends to rubber-stamp them. Save accuracy checking for Stage 5.
+**What to watch for:** this stage is deliberately scoped to style/structure, not technical accuracy—an AI reviewing its own technical claims tends to rubber-stamp them. Save accuracy checking for Stage 5.
 
 ---
 
-## Stage 4: QA / BA Review
+## Stage 4: QA / BA review
 
-**Purpose:** Simulate the perspective of a QA engineer or business analyst — someone who will try to actually follow the steps, or who cares whether the documented behavior matches the intended requirement — before it reaches a real reviewer with limited time.
+**Purpose:** simulate the perspective of a QA engineer or business analyst—someone who might try to follow the steps, or who cares whether the documented behavior matches the intended requirement—before it reaches a real reviewer with limited time.
 
-**AI's role:** A skeptical QA engineer or BA, not a writer.
+**AI's role:** a skeptical QA engineer or BA, not a writer.
 
 **Example prompt (QA persona):**
 ```
@@ -185,15 +185,15 @@ Draft:
 [paste draft]
 ```
 
-**What to watch for:** This is a simulation, not a substitute for real QA or BA sign-off on anything customer-facing or safety-relevant — treat its output as a pre-check that reduces (not eliminates) the burden on the actual reviewer.
+**What to watch for:** this is a simulation, not a substitute for real QA or BA sign-off on anything customer-facing or safety-relevant—treat its output as a pre-check that reduces (not eliminates) the burden on the actual reviewer.
 
 ---
 
-## Stage 5: Technical/Peer Review
+## Stage 5: Technical/peer review
 
-**Purpose:** A close, adversarial read for factual accuracy and completeness — the step immediately before a subject-matter expert's review, meant to reduce the number of round trips with a busy engineer.
+**Purpose:** a close, adversarial read for factual accuracy and completeness—the step immediately before a subject-matter expert's review, meant to reduce the number of round trips with a busy engineer.
 
-**AI's role:** A skeptical technical reviewer, explicitly instructed to distrust unverified claims — including its own, if it was the drafter.
+**AI's role:** a skeptical technical reviewer, explicitly instructed to distrust unverified claims—including its own, if it was the drafter.
 
 **Example prompt:**
 ```
@@ -219,15 +219,15 @@ Source material:
 [paste verified spec/code/logs]
 ```
 
-**What to watch for:** This prompt only reduces risk if the source material you attach is itself authoritative and current — garbage in, confident garbage out.
+**What to watch for:** this prompt only reduces risk if the source material you attach is itself authoritative and current—garbage in, confident garbage out.
 
 ---
 
-## Stage 6: Publish & Maintain
+## Stage 6: Publish and maintain
 
 **Purpose:** Catch drift between published docs and the current state of the product, and keep release notes and changelogs current.
 
-**AI's role:** Auditor / diff-summarizer.
+**AI's role:** auditor / diff-summarizer.
 
 **Example prompt (drift check):**
 ```
@@ -257,23 +257,23 @@ Merged PRs:
 [paste PR titles + descriptions, or a diff]
 ```
 
-**What to watch for:** Drift-check prompts are only as good as the "current source of truth" you provide — pull it live from the actual system, not from memory or an old snapshot.
+**What to watch for:** drift-check prompts are only as good as the "current source of truth" you provide—pull it live from the actual system, not from memory or an old snapshot.
 
 ---
 
-## Prompt Design Principles
+## Prompt design principles
 
 A few patterns worth carrying across every stage above:
 
-1. **One role per prompt.** Don't ask the same prompt to draft and review — the model tends to under-critique work it just produced in the same context. Separate the persona clearly, ideally in separate sessions.
-2. **Forbid guessing, explicitly.** Every prompt above includes an instruction to flag gaps rather than fill them — this single line does more to reduce fabrication than almost anything else.
+1. **One role per prompt.** Don't ask the same prompt to draft and review—the model tends to under-critique work it just produced in the same context. Separate the persona clearly, ideally in separate sessions.
+2. **Forbid guessing, explicitly.** Every prompt above includes an instruction to flag gaps rather than fill them—this single line does more to reduce fabrication than almost anything else.
 3. **Constrain output format.** Asking for a structured list of issues (not a rewritten draft) at review stages keeps the AI from silently making decisions that should be yours.
 4. **Attach the actual source, every time.** Prompts that rely on the model's background knowledge of a product/API will drift from reality; prompts that require it to cite the attached source stay grounded.
 5. **Scope the ask.** "Only check the Troubleshooting section" produces a more useful result than "review this doc," especially for long topics.
 
 ---
 
-## Quick-Reference Table
+## Quick-reference table
 
 | Stage | AI role | Primary output | Human accountable for |
 |---|---|---|---|
