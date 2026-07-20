@@ -4,7 +4,7 @@ title: Joplin User Guide
 description: Learn how to install, create, organize, and sync notes in Joplin.
 ---
 
-# Joplin User Guide
+## Joplin User Guide
 
 ## Introduction
 
@@ -12,19 +12,19 @@ Joplin is an open-source note-taking and personal knowledge management applicati
 
 ### Install Joplin
 
-- Visit https://joplinapp.org and download the latest version for Windows.
+- Visit <https://joplinapp.org> and download the latest version for Windows.
 
-> Note: Alternatively, install from the command line for desktop builds or use the portable app when available. For open source development, the repository is available at https://github.com/joplinapp/joplin.
+> Note: Alternatively, install from the command line for desktop builds or use the portable app when available. For open source development, the repository is available at <https://github.com/joplinapp/joplin>.
 
-#### Windows installation 
+#### Windows installation
 
 - When installing on Windows, you will be prompted to choose whether the app is available for all users or only your account, as shown below.
 - Users can select Anyone who uses the computer (All Users) or only for me (Admin name).
 
-<img src="./assets/joplin-windows-installer.png" alt="Joplin Windows installer user selection" width="600" />
+ <img src="./assets/joplin-windows-installer.png" alt="Joplin Windows installer user selection" width="600" />
 
 - After choosing the installation option, click the **Install** button.
-- When installation completes, click the **Finish** button. 
+- When installation completes, click the **Finish** button.
 
 > Tip: Users can also enable the Run Joplin option to launch the app after clicking on the **Finish** button.
 
@@ -70,15 +70,14 @@ Joplin uses Markdown for formatting notes. Common syntax includes:
 
 - Use triple backticks for code blocks:
 
-  ```
   ```python
+
   print("Hello, Joplin")
-  ```
+
   ```
 
 - Add attachments with **Insert > Attach file** or drag files directly into a note.
 - Attachments can include images, PDFs, and documents.
-
 
 ### Save & Sync
 
@@ -109,7 +108,7 @@ The following screen shows the sync options available in Joplin:
 
 <img src="./assets/joplin-windows-Onedrive-sync-success.png" alt="OneDrive sync success confirmation" width="600" />
 
-5. A success message appears.
+1. A success message appears.
 
 <img src="./assets/joplin-windows-Onedrive-sync-success2.png" alt="OneDrive sync success confirmation" width="600" />
 
