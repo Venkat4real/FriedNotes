@@ -9,6 +9,7 @@ description: Keep up with the latest product updates, releases, and feature enha
 > Every Tuesday, the current week's updates are grouped into a weekly release section.
 
 ## Auto-generated release notes
+- **[#20](https://github.com/Venkat4real/Documentation-Portfolio/pull/20)** - Removed the samples files and corrected typos in guides. *by @Venkat4real, merged 2026-07-20.*
 - **[#19](https://github.com/Venkat4real/Documentation-Portfolio/pull/19)** - Introduction of grammer bot to check for grammer before mearging chan… *by @Venkat4real, merged 2026-07-19.*
 - **[#18](https://github.com/Venkat4real/Documentation-Portfolio/pull/18)** - Updated link of the automated release notes document *by @Venkat4real, merged 2026-07-16.*
 - **[#17](https://github.com/Venkat4real/Documentation-Portfolio/pull/17)** - Office laptop *by @Venkat4real, merged 2026-07-16.*
