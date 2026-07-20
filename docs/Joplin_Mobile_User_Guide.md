@@ -1,10 +1,10 @@
 ---
 layout: docs
 title: Mobile User Guide
-description: Step-by-step instructions for using the mobile version of Fried Notes.
+description: Step-by-step instructions for using the mobile version of Joplin.
 ---
 
-# Joplin mobile user guide
+## Joplin mobile user guide
 
 ## Introduction
 
@@ -24,7 +24,7 @@ This guide covers the Joplin mobile app for Android and iOS. It explains how to 
 - Search for **Joplin**.
 - Tap **Get** and authenticate with your Apple ID.
 
-> Note: The Joplin mobile app is free and open source. For development details, see https://github.com/joplinapp/joplin.
+> Note: The Joplin mobile app is free and open source. For development details, see <https://github.com/joplinapp/joplin>.
 
 ## First launch and setup
 

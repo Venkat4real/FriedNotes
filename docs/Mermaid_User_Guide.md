@@ -40,7 +40,7 @@ Place holder for SS
 Before you begin, ensure you have the following installed on your machine:
 
 | Tool | Minimum Version | Purpose |
-|------|----------------|---------|
+| ------ | ---------------- | --------- |
 | [Node.js](https://nodejs.org/) | v16+ | JavaScript runtime |
 | [npm](https://www.npmjs.com/) | v8+ | Package manager (bundled with Node.js) |
 | [Git](https://git-scm.com/) | v2.30+ | Version control |
@@ -247,7 +247,7 @@ After installing Mermaid, you can customize its behavior and appearance.
 Mermaid comes with five built-in themes:
 
 | Theme | Description |
-|-------|-------------|
+| ------- | ------------- |
 | `default` | Light theme with blue accents |
 | `dark` | Dark background with light text |
 | `forest` | Green-toned nature theme |
@@ -375,6 +375,7 @@ git push origin main
 ```
 
 Enable GitHub Pages in your repository settings:
+
 1. Go to **Settings** → **Pages**
 2. Under **Source**, select your branch (e.g., `main`) and folder (e.g., `/ (root)`)
 3. Click **Save**
@@ -385,7 +386,7 @@ Your site will be live at `https://<username>.github.io/<repo-name>/`.
 
 **Flowchart:**
 
-```
+``` mermaid
 graph LR
     A[HTML] --> B[CSS]
     B --> C[JavaScript]
@@ -395,7 +396,7 @@ graph LR
 
 **Sequence Diagram:**
 
-```
+``` mermaid
 sequenceDiagram
     participant User
     participant Portfolio
@@ -409,7 +410,7 @@ sequenceDiagram
 
 **Gantt Chart:**
 
-```
+``` mermaid
 gantt
     title Portfolio Development Timeline
     dateFormat  YYYY-MM-DD
@@ -427,7 +428,7 @@ gantt
 
 **Pie Chart:**
 
-```
+``` mermaid
 pie title Skills Distribution
     "JavaScript" : 35
     "Python" : 25
@@ -438,7 +439,7 @@ pie title Skills Distribution
 
 **Class Diagram:**
 
-```
+``` mermaid
 classDiagram
     class Portfolio {
         +String name
@@ -460,7 +461,7 @@ classDiagram
 ## Diagram Types Reference
 
 | Diagram Type | Syntax Keyword | Use Case |
-|-------------|---------------|----------|
+| ------------- | --------------- | ---------- |
 | Flowchart | `graph` or `flowchart` | Process flows, decision trees |
 | Sequence Diagram | `sequenceDiagram` | API interactions, user flows |
 | Class Diagram | `classDiagram` | Object-oriented design |
@@ -480,7 +481,7 @@ classDiagram
 
 ### 1. Keep Diagrams Simple and Focused
 
-```
+``` mermaid
 ✅ DO: One concept per diagram
 ❌ DON'T: Cram everything into a single massive diagram
 ```
@@ -489,7 +490,7 @@ Break complex systems into multiple smaller diagrams rather than one overwhelmin
 
 ### 2. Use Meaningful Node IDs and Labels
 
-```
+``` mermaid
 ✅ DO:
 graph TD
     userLogin[User Login] --> authCheck{Authentication Check}
@@ -526,7 +527,7 @@ Choose the direction that best represents the logical flow of your content.
 
 ### 6. Use Subgraphs for Grouping
 
-```
+``` mermaid
 graph TD
     subgraph Frontend
         A[React] --> B[Redux]
@@ -578,13 +579,14 @@ Avoid unexpected breaking changes by pinning to a specific version:
 
 ### Q1: Why isn't my Mermaid diagram rendering on GitHub Pages?
 
-**A:** GitHub Pages serves static HTML. Unlike GitHub Markdown (which natively renders Mermaid), GitHub Pages requires you to include the Mermaid JavaScript library explicitly. Add the CDN script tag to your HTML file (see [Installing Mermaid — Method 1](#method-1-cdn-simplest--recommended-for-most-portfolios)).
+**A:** GitHub Pages serves static HTML. Unlike GitHub Markdown (which natively renders Mermaid), GitHub Pages requires you to include the Mermaid JavaScript library explicitly. Add the CDN script tag to your HTML file (see [Installing Mermaid — Method 1](#method-1-cdn-simplest--recommended)).
 
 ---
 
 ### Q2: Can I use Mermaid in Jekyll-based GitHub Pages?
 
 **A:** Yes! You have two options:
+
 1. Use the `jekyll-mermaid` plugin (see [Method 3](#method-3-jekyll-plugin-for-jekyll-based-github-pages)).
 2. Add the CDN script to your Jekyll layout template (e.g., `_layouts/default.html`).
 
@@ -636,6 +638,7 @@ mermaid.initialize({
 ### Q5: My diagram has a syntax error. How do I debug it?
 
 **A:** Use the [Mermaid Live Editor](https://mermaid.live/) to paste your diagram code and see real-time error messages. Common issues include:
+
 - Missing arrow syntax (`-->` not `->`)
 - Unmatched brackets or parentheses
 - Special characters in labels (wrap in quotes: `A["Label with (parens)"]`)
@@ -646,6 +649,7 @@ mermaid.initialize({
 ### Q6: Is there a maximum diagram size?
 
 **A:** There's no hard limit, but very large diagrams (100+ nodes) can become slow to render and difficult to read. If your diagram is getting too large:
+
 - Break it into multiple smaller diagrams
 - Use subgraphs to organize sections
 - Consider linking between pages for different diagram views
@@ -655,12 +659,15 @@ mermaid.initialize({
 ### Q7: Can I export Mermaid diagrams as images?
 
 **A:** Yes, several options:
+
 1. **Mermaid Live Editor** — Export as SVG or PNG from [mermaid.live](https://mermaid.live/)
 2. **Mermaid CLI** — Install `@mermaid-js/mermaid-cli` and use:
+
    ```bash
    npm install -g @mermaid-js/mermaid-cli
    mmdc -i input.mmd -o output.svg
    ```
+
 3. **Browser** — Right-click the rendered SVG and save as image
 
 ---
@@ -669,7 +676,7 @@ mermaid.initialize({
 
 **A:** Yes! Mermaid supports click events and hyperlinks:
 
-```
+``` mermaid
 graph TD
     A[My GitHub] --> B[My Portfolio]
     click A "https://github.com/username" "Visit GitHub" _blank
@@ -716,4 +723,4 @@ await mermaid.run({ nodes: [diagramDiv] });
 
 ---
 
-*Last updated: July 2026*
+Last updated: July 2026
